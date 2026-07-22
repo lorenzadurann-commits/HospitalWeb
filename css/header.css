@@ -1,0 +1,26 @@
+header {
+    background: #ffffff;
+    border-bottom: 3px solid #7a003c;
+    padding: 15px 40px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 90px;
+}
+
+.titulos h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #7a003c;
+}
+
+.titulos p {
+    margin: 0;
+    color: #666;
+}
