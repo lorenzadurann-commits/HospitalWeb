@@ -1,12 +1,12 @@
 .encabezado{
 
-    background:#e9ecef;
+    background:#495057;
 
     width:100%;
 
     padding:15px 0;
 
-    box-shadow:0 2px 8px rgba(0,0,0,.15);
+    box-shadow:0 3px 8px rgba(0,0,0,.20);
 
 }
 
@@ -20,7 +20,7 @@
 
     align-items:center;
 
-    gap:20px;
+    gap:25px;
 
 }
 
@@ -34,7 +34,12 @@
 
 h1{
 
-    color:#1f2937;   /* Gris oscuro */
-    font-weight:700;
+    font-size:2rem;
+
+    color:#ffffff;
+
+    font-weight:200;
+
+    letter-spacing:2px;
 
 }
