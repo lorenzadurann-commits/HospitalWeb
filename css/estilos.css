@@ -8,4 +8,45 @@ body{
 
     font-family:'Montserrat',sans-serif;
 
+} 
+
+.hero{
+    background-color: #808080; /* gris del espacio sobrante */
+    padding: 20px;
+}
+
+.hero-imagen{
+    height: 500px;
+
+    background-image: ("../imagenes/fachada_panoramica.jpg");
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+
+/* capa oscura para que se lea el texto */
+.hero-imagen::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.35);
+}
+
+
+.hero h1{
+    position:relative;
+
+    color:white;
+    text-align:center;
+
+    font-size:50px;
+    font-weight:bold;
+
+    z-index:1;
 }
