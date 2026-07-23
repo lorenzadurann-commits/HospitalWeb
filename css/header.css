@@ -1,6 +1,6 @@
 .encabezado{
 
-    background:#ffffff;
+    background:#e9ecef;
 
     width:100%;
 
@@ -34,8 +34,7 @@
 
 h1{
 
-    font-size:2rem;
-
-    color:#ffffff;
+    color:#1f2937;   /* Gris oscuro */
+    font-weight:700;
 
 }
