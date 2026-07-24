@@ -10,11 +10,17 @@
 
     margin-top:50px;
 
+    padding:40px 20px;
+
+    background:#555555; /* fondo gris más oscuro */
+
+    border-bottom:4px solid #006b3c; /* línea separadora antes del carrusel */
+
 }
 
 .boton-verde{
 
-    background:#4CAF50;
+    background:#00552f;
 
     color:white;
 
@@ -24,7 +30,7 @@
 
     text-align:center;
 
-    border-radius:10px;
+    border-radius:5px;
 
     font-size:1.1rem;
 
@@ -36,7 +42,7 @@
 
 .boton-verde:hover{
 
-    background:#388E3C;
+    background:#007a43;
 
 }
 
