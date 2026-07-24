@@ -1,0 +1,49 @@
+.botones-servicios{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 260px);
+
+    gap:18px;
+
+    justify-content:center;
+
+    margin-top:50px;
+
+}
+
+.boton-verde{
+
+    background:#4CAF50;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:18px;
+
+    text-align:center;
+
+    border-radius:10px;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+}
+
+.boton-verde:hover{
+
+    background:#388E3C;
+
+}
+
+.boton-verde:focus{
+
+    outline:3px solid #FFD54F;
+
+    outline-offset:4px;
+
+}
