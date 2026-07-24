@@ -12,7 +12,9 @@
 
     background-repeat:no-repeat;
 
-    .overlay{
+    
+} 
+.overlay{
 
     position:absolute;
 
@@ -28,7 +30,7 @@
 
     text-align:center;
 
-} 
+    }
 
 .overlay h2{
 
@@ -40,6 +42,5 @@
 
     line-height:1.2;
 
-}
+    }
 
-}
