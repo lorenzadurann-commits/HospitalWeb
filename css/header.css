@@ -14,13 +14,12 @@
 
 
     
-    background:#495057;
 
     width:100%;
 
     padding:15px 0;
 
-    box-shadow:0 3px 8px rgba(0,0,0,.20);
+   
 
 }
 
@@ -46,7 +45,7 @@
 
 }
 
-h1{
+.encabezado h1{
 
     color:white;
     font-size:2rem;
