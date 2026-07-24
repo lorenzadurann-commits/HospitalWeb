@@ -81,9 +81,98 @@
 
 </section>
 
+<section class="carrusel">
+
+    <div class="carrusel-contenedor">
+
+        <img src="Sitio web para la Prevención de la Violencia Laboral, el Acoso y Hostigamiento Sexual del ISAPEG.jpg">
+        <img src="Sitio web para la Prevención de la Violencia Laboral, el Acoso y Hostigamiento Sexual del ISAPEG..jpg" >
+        <img src="Infografía integrantes del Comité para Prevenir y Atender la Violencia Laboral, el Acoso y Hostigamiento Sexual del ISAPEG-" >
+
+    </div>
+
+</section>
+
 <script src="js/menu.js"></script>
 <script src="js/carrusel.js"></script>
 <script src="js/accesibilidad.js"></script>
+
+<section class="carrusel">
+
+    <div class="carrusel-contenedor">
+
+        <div class="slide activo">
+            <img src="Sitio web para la Prevención de la Violencia Laboral, el Acoso y Hostigamiento Sexual del ISAPEG.jpg">
+        </div>
+
+        <div class="slide">
+            <img src="Sitio web para la Prevención de la Violencia Laboral, el Acoso y Hostigamiento Sexual del ISAPEG..jpg">
+        </div>
+
+        <div class="slide">
+            <img src="Infografía integrantes del Comité para Prevenir y Atender la Violencia Laboral, el Acoso y Hostigamiento Sexual del ISAPEG-.jpg">
+        </div>
+
+    </div>
+
+
+    <button class="anterior" aria-label="Imagen anterior">
+        &#10094;
+    </button>
+
+    <button class="siguiente" aria-label="Imagen siguiente">
+        &#10095;
+    </button>
+
+
+</section>
+
+<script>
+
+let indice = 0;
+
+const slides = document.querySelectorAll(".slide");
+
+
+function mostrarSlide(n){
+
+    slides.forEach(slide=>{
+        slide.classList.remove("activo");
+    });
+
+    slides[n].classList.add("activo");
+
+}
+
+
+document.querySelector(".siguiente").onclick=function(){
+
+    indice++;
+
+    if(indice >= slides.length){
+        indice=0;
+    }
+
+    mostrarSlide(indice);
+
+};
+
+
+
+document.querySelector(".anterior").onclick=function(){
+
+    indice--;
+
+    if(indice < 0){
+        indice=slides.length-1;
+    }
+
+    mostrarSlide(indice);
+
+};
+
+
+</script>
 
 </body>
 
