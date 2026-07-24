@@ -1,0 +1,45 @@
+.hero{
+
+    position:relative;
+
+    height:100vh;
+
+    background-image:url("../imagenes/fachada_panoramica.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    .overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.25);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+} 
+
+.overlay h2{
+
+    color:white;
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    line-height:1.2;
+
+}
+
+}
