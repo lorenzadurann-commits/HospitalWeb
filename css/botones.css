@@ -9,9 +9,9 @@
 
 .botones-servicios{
 
-    display:flex;
+    display:grid;
 
-    grid-template-columns:repeat(2, 260px);
+    grid-template-columns: repeat(3, 1fr);
 
     gap:20px;
 
@@ -21,7 +21,7 @@
 
     flex-wrap: wrap; 
     width: 90%;
-    max-width: 1400px;
+    max-width: 1000px;
     margin: auto;
 
 
@@ -46,6 +46,8 @@
     font-weight:600;
 
     transition:0.3s;
+    
+    width: 100%;
 
 }
 
@@ -180,5 +182,13 @@
 .punto.activo{
 
     background:#006b3c;
+
+}
+
+@media(max-width:768px){
+
+    .botones-servicios {
+        grid-template-columns: 1fr;
+    }
 
 }
