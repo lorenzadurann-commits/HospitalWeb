@@ -10,3 +10,52 @@ body{
 
 } 
 
+.lactancia {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 90%;
+    margin: 50px auto;
+}
+
+
+.lactancia-imagen {
+    width: 45%;
+}
+
+
+.lactancia-imagen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+.lactancia-texto {
+    width: 55%;
+}
+
+
+.lactancia-texto h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+.lactancia-texto li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+@media(max-width:768px){
+
+    .lactancia{
+        flex-direction:column;
+    }
+
+    .lactancia-imagen,
+    .lactancia-texto{
+        width:100%;
+    }
+
+}
