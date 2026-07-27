@@ -21,19 +21,19 @@ body{
 
 
 .lactancia-imagen {
-    width: 50%;
+    width: 55%;
 }
 
 
 .lactancia-imagen img {
     width: 100%;
-    height: auto;
+    height: 650px;
     object-fit: contain;
 }
 
 
 .lactancia-texto {
-    width: 50%;
+    width: 45%;
 }
 
 
@@ -59,4 +59,12 @@ body{
         width:100%;
     }
 
+}
+
+.carrusel,
+.lactancia {
+    width: 90%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
