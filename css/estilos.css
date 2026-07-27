@@ -11,10 +11,11 @@ body{
 } 
 
 .lactancia {
-    display: flex;
+    display: flex !important;
+    flex-direction: row;
     align-items: flex-start;
     gap: 30px;
-    width: 85%;
+    width: 90%;
     margin: 40px auto;
 }
 
