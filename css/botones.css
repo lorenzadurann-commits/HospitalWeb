@@ -1,3 +1,14 @@
+.servicios{
+
+    background: #f2f2f2;
+
+    padding: 40px 0;
+
+    border-bottom: 1px solid #d0d0d0;
+
+}
+
+
 .botones-servicios{
 
     display:grid;
@@ -10,11 +21,6 @@
 
     margin-top:50px;
 
-    padding:40px 20px;
-
-    background:#555555; /* fondo gris más oscuro */
-
-    border-bottom:4px solid #006b3c; /* línea separadora antes del carrusel */
 
 }
 
