@@ -152,3 +152,39 @@
     right:15px;
 
 }
+
+.indicadores{
+
+    position:absolute;
+
+    bottom:15px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.punto{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#cfcfcf;
+
+    transition:0.3s;
+
+}
+
+.punto.activo{
+
+    background:#006b3c;
+
+}

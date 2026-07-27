@@ -103,6 +103,13 @@
 
     </div>
 
+<div class="indicadores">
+
+    <span class="punto activo"></span>
+    <span class="punto"></span>
+    <span class="punto"></span>
+
+</div>
 
     <button class="anterior" aria-label="Imagen anterior">
         &#10094;
@@ -120,7 +127,7 @@
 let indice = 0;
 
 const slides = document.querySelectorAll(".slide");
-
+const slides = document.querySelectorAll(".slide");
 
 function mostrarSlide(n){
 
@@ -128,9 +135,15 @@ function mostrarSlide(n){
         slide.classList.remove("activo");
     });
 
+    puntos.forEach(punto=>{
+        punto.classList.remove("activo");
+    });
+
     slides[n].classList.add("activo");
+    puntos[n].classList.add("activo");
 
 }
+
 
 
 document.querySelector(".siguiente").onclick=function(){
