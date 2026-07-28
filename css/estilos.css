@@ -14,34 +14,39 @@ body{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 40px;
+    gap: 35px;
     width: 95%;
     margin: 50px auto;
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 50px auto;
 }
 
 
 .lactancia-imagen {
     width: 50%;
-    border: 5px solid blue;
+    display: flex;
+    justify-content: center;
 }
 
 
 .lactancia-imagen img {
-    width: 100%;
-    height: 700px;
+    width: auto;
+    max-width: 100%;
+    height: 850px;
     object-fit: contain;
+    border: none;
 }
 
 
 .lactancia-texto {
-    width: 45%;
+    width: 52%;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 
 .lactancia-texto h2 {
-    font-size: 28px;
+    font-size: 34px;
     margin-bottom: 20px;
 }
 
