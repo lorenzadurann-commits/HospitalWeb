@@ -74,3 +74,28 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+
+.antecedentes {
+    width: 92%;
+    max-width: 1300px;
+    margin: 70px auto;
+    padding: 40px 50px;
+    background: #ffffff;
+    border-top: 4px solid #006c3b;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.antecedentes h2 {
+    font-size: 38px;
+    color: #006c3b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.antecedentes p {
+    font-size: 20px;
+    line-height: 1.9;
+    text-align: justify;
+    margin-bottom: 25px;
+    color: #222;
+}
