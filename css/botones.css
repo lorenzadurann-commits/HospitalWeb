@@ -65,15 +65,13 @@
 
 }
 
-.carrusel{
-
-    width: 80%;
-    max-width: 900px;
+.carrusel {
+    width: 72%;
+    max-width: 850px;
     margin: 40px auto;
     position: relative;
     background: #e5e5e5;
-    padding: 20px;
-
+    padding: 15px;
 }
 
 
@@ -102,13 +100,12 @@
 }
 
 
-.slide img{
+.slide img {
     width: 100%;
-    max-width: 950px;
     height: auto;
+    max-height: 1150px;
     object-fit: contain;
     border: none;
-
 }
 
 
