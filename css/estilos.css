@@ -101,3 +101,57 @@ body{
     margin-bottom: 28px;
     color: #222;
 }
+
+.filosofia {
+    width: 95%;
+    max-width: 1500px;
+    margin: 70px auto;
+    padding: 40px 30px;
+    border-top: 1px solid #bdbdbd;
+    position: relative;
+    overflow: hidden;
+}
+
+.filosofia::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("imagenes/logo_transparente.png") center center no-repeat;
+    background-size: 55%;
+    opacity: 0.10;
+    pointer-events: none;
+}
+
+.filosofia-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+.filosofia h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 35px;
+    color: #111;
+}
+
+.filosofia h3 {
+    color: #006c3b;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.filosofia p,
+.filosofia li {
+    font-size: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.filosofia ul {
+    padding-left: 25px;
+}
+
+.filosofia li {
+    margin-bottom: 18px;
+}
