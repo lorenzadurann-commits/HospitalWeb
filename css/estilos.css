@@ -85,13 +85,9 @@ body{
 }
 
 .antecedentes {
-    width: 95%;
-    max-width: 1500px;
-    margin: 60px auto;
+    background: #ececec;
     padding: 35px 25px;
-    background:transparent;
-    border-top: 1px solid #bdbdbd;
-    box-shadow: none;
+    border-top: 2px solid #c7c7c7;
 }
 
 .antecedentes h2 {
@@ -113,10 +109,10 @@ body{
 
 .franja-filosofia {
     width: 100%;
-    background: #ececec;
+    background: #f6f6f6;
     padding: 40px 0 60px;
-    border-top: 1px solid #c7c7c7;
-    border-bottom: 1px solid #c7c7c7;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
 }
 
 .filosofia {
@@ -188,18 +184,22 @@ body{
 }
 
 .servicios-imagen {
-    width: 55%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
 }
 
 .servicios-imagen img {
     width: 100%;
+    max-width: 600px;
     height: auto;
     border-radius: 4px;
 }
 
 .servicios-lista {
-    width: 45%;
+    width: 55%;
 }
+
 .servicios-lista h2 {
     color: #0052cc;
     font-size: 46px;
@@ -223,35 +223,35 @@ body{
 .horarios {
     width: 100%;
     background: #ffffff;
-    padding: 60px 0;
+    padding: 50px 0 40px;
     border-top: 1px solid #c7c7c7;
 }
 
 .horario-bloque {
     width: 90%;
-    max-width: 1100px;
-    margin: 0 auto 50px;
-    padding: 35px 20px;
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    padding: 20px 10px;
     text-align: center;
-    border-top: 2px solid #c7c7c7;
-    border-bottom: 2px solid #c7c7c7;
+    border: none;
 }
 
 .horario-bloque:last-child {
     margin-bottom: 0;
 }
+
 .horario-bloque h2 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 800;
     color: #000;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     text-transform: uppercase;
 }
 
 .horario-bloque p {
-    font-size: 20px;
-    line-height: 1.8;
-    margin-bottom: 10px;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 6px;
     color: #222;
 }
 
@@ -267,13 +267,12 @@ body{
 }
 
 .evacuacion {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 92%;
-    max-width: 1500px;
-    margin: 0 auto;
+    width: 100%;
+    background: #ffffff;
+    padding: 60px 0;
+    border-top: 2px solid #c7c7c7;
 }
+
 
 .evacuacion-imagen {
     width: 55%;
