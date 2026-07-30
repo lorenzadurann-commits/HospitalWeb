@@ -111,15 +111,22 @@ body{
     color: #222;
 }
 
+.franja-filosofia {
+    width: 100%;
+    background: #ececec;
+    padding: 40px 0 60px;
+    border-top: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+}
+
 .filosofia {
     width: 95%;
     max-width: 1500px;
-    margin: 70px auto;
-    padding: 40px 30px;
-    border-top: 1px solid #bdbdbd;
+    margin: 0 auto;
+    padding: 20px 30px;
     position: relative;
     overflow: hidden;
-    background: #f2f2f2;
+    background: transparent;
 }
 
 .filosofia::before {
@@ -196,10 +203,10 @@ body{
 
 .servicios-lista h2 {
     color: #0052cc;
-    font-size: 54px;
-    font-weight: 800;
+    font-size: 58px;
+    font-weight: 900;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .servicios-lista ul {
@@ -208,8 +215,50 @@ body{
 }
 
 .servicios-lista li {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 22px;
+   font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 24px;
+    color: #000;
+    letter-spacing: 0.3px;
+}
+
+.horarios {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 60px 0;
+    border-top: 1px solid #c7c7c7;
+}
+
+.horario-bloque {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto 50px;
+    padding: 35px 20px;
+    text-align: center;
+    border-top: 2px solid #c7c7c7;
+    border-bottom: 2px solid #c7c7c7;
+}
+
+.horario-bloque:last-child {
+    margin-bottom: 0;
+}
+
+.horario-bloque h2 {
+    font-size: 38px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.horario-bloque p {
+    font-size: 24px;
+    line-height: 1.9;
+    margin-bottom: 14px;
     color: #222;
+}
+
+.horario-bloque strong {
+    color: #000;
+    font-weight: 700;
 }
