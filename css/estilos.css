@@ -46,7 +46,7 @@ body{
 
 .lactancia-texto {
     width: 52%;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     line-height: 1.8;
 }
 
@@ -100,7 +100,7 @@ body{
 }
 
 .antecedentes p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     line-height: 1.9;
     text-align: justify;
     margin-bottom: 28px;
@@ -159,7 +159,7 @@ body{
 
 .filosofia p,
 .filosofia li {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     line-height: 1.8;
     text-align: justify;
 }
@@ -214,7 +214,7 @@ body{
 }
 
 .servicios-lista li {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     margin-bottom: 14px;
     color: #000;
@@ -249,7 +249,7 @@ body{
 }
 
 .horario-bloque p {
-    font-size: 15px;
+    font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 4px;
     color: #222;
@@ -270,27 +270,27 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 45px;
     width: 92%;
-    max-width: 1200px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
 .evacuacion-imagen {
-    width: 38%;
+    width: 48%;
     display: flex;
     justify-content: center;
 }
 
 .evacuacion-imagen img {
     width: 100%;
-    max-width: 380px;
+    max-width: 560px;
     height: auto;
     border-radius: 4px;
 }
 
 .evacuacion-texto {
-    width: 42%;
+    width: 40%;
 }
 
 .evacuacion-texto h2 {
@@ -302,7 +302,9 @@ body{
 }
 
 .evacuacion-texto p {
-    font-size: 17px;
+.puntos-texto p {
+    font-size: 1rem;
+}   
     line-height: 1.7;
     color: #222;
     text-align: justify;

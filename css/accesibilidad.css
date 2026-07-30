@@ -1,34 +1,31 @@
-
-
-#panel-accesibilidad {
-    position: fixed;
-    bottom: 90px;
-    right: 20px;
-    background: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    z-index: 9999;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+.subrayar-enlaces a {
+    text-decoration: underline !important;
 }
 
-#panel-accesibilidad button {
-    padding: 8px 12px;
-    border: none;
-    border-radius: 6px;
-    background: #006c3b;
-    color: white;
-    cursor: pointer;
+.fuente-legible {
+    font-family: Arial, Verdana, sans-serif !important;
 }
 
-.alto-contraste {
-    background: black !important;
-    color: white !important;
+.espaciado-amplio * {
+    letter-spacing: 0.08em !important;
+    line-height: 1.9 !important;
 }
 
-.grises {
-    filter: grayscale(100%);
+.cursor-grande {
+    cursor: url('https://cur.cursors-4u.net/cursors/cur-2/cur116.cur'), auto;
+}
+
+.sin-imagenes img {
+    display: none !important;
+}
+
+.modo-lectura {
+    background: #fdf6e3 !important;
+    color: #111 !important;
+}
+
+.modo-lectura * {
+    max-width: 850px;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }

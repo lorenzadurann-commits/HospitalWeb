@@ -3,11 +3,9 @@ const panel = document.getElementById("panel-accesibilidad");
 
 let escala = 1;
 
-if (boton && panel) {
-    boton.addEventListener("click", () => {
-        panel.classList.toggle("oculto");
-    });
-}
+boton.addEventListener("click", () => {
+    panel.classList.toggle("oculto");
+});
 
 function aplicarEscala() {
     document.documentElement.style.fontSize = `${escala * 100}%`;
@@ -31,8 +29,45 @@ function escalaGrises() {
     document.body.classList.toggle("grises");
 }
 
+function subrayarEnlaces() {
+    document.body.classList.toggle("subrayar-enlaces");
+}
+
+function fuenteLegible() {
+    document.body.classList.toggle("fuente-legible");
+}
+
+function aumentarEspaciado() {
+    document.body.classList.toggle("espaciado-amplio");
+}
+
+function cursorGrande() {
+    document.body.classList.toggle("cursor-grande");
+}
+
+function ocultarImagenes() {
+    document.body.classList.toggle("sin-imagenes");
+}
+
+function modoLectura() {
+    document.body.classList.toggle("modo-lectura");
+}
+
 function restablecer() {
     escala = 1;
     aplicarEscala();
-    document.body.classList.remove("alto-contraste", "grises");
+
+    document.body.className = document.body.className
+        .split(" ")
+        .filter(c => ![
+            "alto-contraste",
+            "grises",
+            "subrayar-enlaces",
+            "fuente-legible",
+            "espaciado-amplio",
+            "cursor-grande",
+            "sin-imagenes",
+            "modo-lectura"
+        ].includes(c))
+        .join(" ");
 }
