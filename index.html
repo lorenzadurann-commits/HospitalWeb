@@ -239,6 +239,18 @@ document.querySelector(".anterior").onclick=function(){
 <script src="js/carrusel.js"></script>
 <script src="js/accesibilidad.js"></script>
 
+<button id="boton-accesibilidad" aria-label="Opciones de accesibilidad">
+    ♿
+</button>
+
+<div id="panel-accesibilidad" class="oculto">
+    <button onclick="aumentarTexto()">A+</button>
+    <button onclick="disminuirTexto()">A-</button>
+    <button onclick="altoContraste()">Contraste</button>
+    <button onclick="escalaGrises()">Grises</button>
+    <button onclick="restablecer()">Restablecer</button>
+</div>
+
 </body>
 
 
