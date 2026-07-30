@@ -171,52 +171,52 @@ body{
 .filosofia li {
     margin-bottom: 18px;
 }
-
 .servicios-hospital {
     display: flex;
-    align-items: flex-start;
-    gap: 50px;
-    width: 95%;
-    max-width: 1600px;
-    margin: 80px auto;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 92%;
+    max-width: 1400px;
+    margin: 70px auto;
     padding-top: 40px;
     border-top: 1px solid #c7c7c7;
 }
 
 .servicios-imagen {
-    width: 45%;
+    width: 42%;
     display: flex;
     justify-content: center;
 }
 
 .servicios-imagen img {
     width: 100%;
-    max-width: 600px;
+    max-width: 520px;
     height: auto;
     border-radius: 4px;
 }
 
 .servicios-lista {
-    width: 55%;
+    width: 48%;
 }
 
 .servicios-lista h2 {
     color: #0052cc;
-    font-size: 46px;
+    font-size: 42px;
     font-weight: 800;
     text-align: center;
-    margin-bottom: 35px;
+    line-height: 1.1;
+    margin-bottom: 28px;
 }
 
 .servicios-lista ul {
-    list-style-type: square;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .servicios-lista li {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     color: #000;
 }
 
@@ -241,17 +241,17 @@ body{
 }
 
 .horario-bloque h2 {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 800;
     color: #000;
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     text-transform: uppercase;
 }
 
 .horario-bloque p {
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 6px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 4px;
     color: #222;
 }
 
@@ -263,42 +263,47 @@ body{
     width: 100%;
     background: #ffffff;
     padding: 60px 0;
-    border-top: 1px solid #c7c7c7;
-}
-
-.evacuacion {
-    width: 100%;
-    background: #ffffff;
-    padding: 60px 0;
     border-top: 2px solid #c7c7c7;
 }
 
+.evacuacion-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 .evacuacion-imagen {
-    width: 55%;
+    width: 38%;
+    display: flex;
+    justify-content: center;
 }
 
 .evacuacion-imagen img {
     width: 100%;
+    max-width: 380px;
     height: auto;
     border-radius: 4px;
 }
 
 .evacuacion-texto {
-    width: 45%;
+    width: 42%;
 }
 
 .evacuacion-texto h2 {
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 800;
     color: #000;
-    margin-bottom: 25px;
+    margin-bottom: 18px;
     text-transform: uppercase;
 }
 
 .evacuacion-texto p {
-    font-size: 20px;
-    line-height: 1.8;
+    font-size: 17px;
+    line-height: 1.7;
     color: #222;
     text-align: justify;
 }
