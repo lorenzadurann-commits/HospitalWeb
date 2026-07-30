@@ -1,18 +1,26 @@
 const boton = document.getElementById("boton-accesibilidad");
 const panel = document.getElementById("panel-accesibilidad");
 
+let escala = 1;
+
 if (boton && panel) {
     boton.addEventListener("click", () => {
         panel.classList.toggle("oculto");
     });
 }
 
+function aplicarEscala() {
+    document.documentElement.style.fontSize = `${escala * 100}%`;
+}
+
 function aumentarTexto() {
-    document.body.style.fontSize = "1.1em";
+    escala += 0.1;
+    aplicarEscala();
 }
 
 function disminuirTexto() {
-    document.body.style.fontSize = "0.95em";
+    escala = Math.max(0.8, escala - 0.1);
+    aplicarEscala();
 }
 
 function altoContraste() {
@@ -24,6 +32,7 @@ function escalaGrises() {
 }
 
 function restablecer() {
-    document.body.style.fontSize = "";
+    escala = 1;
+    aplicarEscala();
     document.body.classList.remove("alto-contraste", "grises");
 }
