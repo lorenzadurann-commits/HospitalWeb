@@ -10,15 +10,16 @@ body{
 
 } 
 
-.lactancia {
-    display: flex;
-    align-items: flex-start;
-    gap: 40px;
-    width: 92%;
-    max-width: 1450px;
-    margin: 60px auto;
+.bloque-institucional {
+    background: #d9d9d9;
+    padding: 30px 0 50px;
 }
 
+.lactancia {
+    border-bottom: 2px solid #9e9e9e;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
 
 .lactancia-imagen {
     width: 52%;
@@ -128,17 +129,21 @@ body{
 }
 
 .filosofia h2 {
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 35px;
-    color: #111;
+     text-align: center;
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #000;
+    letter-spacing: 0.5px;
 }
 
 .filosofia h3 {
-    color: #006c3b;
-    font-size: 28px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
 }
 
 .filosofia p,
