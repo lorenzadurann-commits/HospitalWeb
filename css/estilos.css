@@ -126,7 +126,7 @@ body{
     content: "";
     position: absolute;
     inset: 0;
-    background: url("imagenes/logo_transparente.png") center center no-repeat;
+    background: url("../imagenes/logo_transparente.png") center center no-repeat;
     background-size: 70%;
     opacity: 0.08;
     pointer-events: none;
