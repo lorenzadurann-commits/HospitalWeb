@@ -307,3 +307,61 @@ body{
     color: #222;
     text-align: justify;
 }
+
+.puntos-reunion {
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 0 70px;
+}
+
+/* Línea gris centrada */
+.separador-contenido {
+    width: 85%;
+    max-width: 1200px;
+    height: 1px;
+    background: #c7c7c7;
+    margin: 0 auto 45px;
+}
+
+.puntos-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+.puntos-imagen {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.puntos-imagen img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.puntos-texto {
+    width: 45%;
+}
+
+.puntos-texto h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.puntos-texto p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+    text-align: justify;
+}
