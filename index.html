@@ -85,7 +85,24 @@
 
 
 
-<section class="carrusel">
+
+
+    <span class="punto activo"></span>
+    <span class="punto"></span>
+    <span class="punto"></span>
+
+</div>
+
+    <button class="anterior" aria-label="Imagen anterior">
+        &#10094;
+    </button>
+
+    <button class="siguiente" aria-label="Imagen siguiente">
+        &#10095;
+    </button>
+
+
+</section><section class="carrusel">
 
     <div class="carrusel-contenedor">
 
@@ -104,23 +121,6 @@
     </div>
 
 <div class="indicadores">
-
-    <span class="punto activo"></span>
-    <span class="punto"></span>
-    <span class="punto"></span>
-
-</div>
-
-    <button class="anterior" aria-label="Imagen anterior">
-        &#10094;
-    </button>
-
-    <button class="siguiente" aria-label="Imagen siguiente">
-        &#10095;
-    </button>
-
-
-</section>
 
 <script>
 
@@ -554,12 +554,13 @@ document.querySelector(".anterior").onclick=function(){
 
 <script>
 
-const contenedorPuntos = document.querySelector('.indicadores2');
-function actualizarPuntos(indice) {
+const imagenes2 = document.querySelectorAll(".slides-wrapper img");
 
-    contenedorPuntos.innerHTML = '';
+function actualizarPuntos2(indice) {
 
-    const total = imagenes.length;
+    contenedorPuntos2.innerHTML = '';
+
+    const total = imagenes2.length;
     const visibles = 7;
 
     let inicio;
@@ -577,22 +578,29 @@ function actualizarPuntos(indice) {
     // Zona central
     } else {
 
-        // Mantener el verde en la 5ª posición
         inicio = indice - 4;
+
     }
+
 
     for (let i = 0; i < visibles; i++) {
 
         const punto = document.createElement('span');
+
         punto.classList.add('punto2');
 
         const imagenRepresentada = inicio + i;
 
+
         if (imagenRepresentada === indice) {
+
             punto.classList.add('activo-punto2');
+
         }
 
-        contenedorPuntos.appendChild(punto);
+
+        contenedorPuntos2.appendChild(punto);
+
     }
 }
 </script>
