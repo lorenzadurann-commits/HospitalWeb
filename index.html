@@ -463,38 +463,35 @@ document.querySelector(".anterior").onclick=function(){
 
 <script>
 
-const imagenes = document.querySelectorAll('.slides-wrapper img');
 const puntos2 = document.querySelectorAll('.punto2');
-const btnPrev = document.querySelector('.anterior2');
-const btnNext = document.querySelector('.siguiente2');
-
-let indiceGaleria = 0;
-let animando = false;
 
 function actualizarPuntos(indice) {
 
     puntos2.forEach(p => {
-        p.classList.remove('activo-punto2', 'animar');
+        p.classList.remove('activo-punto2');
     });
 
-    // ===== LÓGICA ESTILO GOOGLE SITES =====
     let posicionVisible;
 
-    if (indice <= 2) {
-        // Imágenes 1-3
+    // ===== COMPORTAMIENTO TIPO GOOGLE SITES =====
+
+    if (indice < 5) {
+        // Imágenes 1-5
+        // El verde avanza normalmente
         posicionVisible = indice;
-    } else if (indice >= imagenes.length - 3) {
-        // Últimas 3 imágenes
-        posicionVisible = 6 - (imagenes.length - 1 - indice);
+
+    } else if (indice >= imagenes.length - 5) {
+        // Últimas 5 imágenes
+        // El verde se mueve hacia la izquierda
+        posicionVisible = 7 - (imagenes.length - indice);
+
     } else {
-        // Mantener el punto activo centrado (3° desde la izquierda)
-        posicionVisible = 2;
+        // Zona central
+        // Mantener el verde en el tercer punto desde la derecha
+        posicionVisible = 4;
     }
 
     puntos2[posicionVisible].classList.add('activo-punto2');
-
-    // Pequeña animación
-    puntos2[posicionVisible].classList.add('animar');
 }
 
 function mostrarImagen(indice) {
@@ -507,44 +504,6 @@ function mostrarImagen(indice) {
 
     actualizarPuntos(indice);
 }
-
-function siguiente() {
-
-    if (animando) return;
-    animando = true;
-
-    indiceGaleria = (indiceGaleria + 1) % imagenes.length;
-
-    mostrarImagen(indiceGaleria);
-
-    setTimeout(() => {
-        animando = false;
-    }, 350);
-}
-
-function anterior() {
-
-    if (animando) return;
-    animando = true;
-
-    indiceGaleria = (indiceGaleria - 1 + imagenes.length) % imagenes.length;
-
-    mostrarImagen(indiceGaleria);
-
-    setTimeout(() => {
-        animando = false;
-    }, 350);
-}
-
-btnNext.addEventListener('click', siguiente);
-btnPrev.addEventListener('click', anterior);
-
-// Cambio automático cada 5 segundos
-setInterval(siguiente, 5000);
-
-// Inicializar
-mostrarImagen(indiceGaleria);
-
 </script>
 
 

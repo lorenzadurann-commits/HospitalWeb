@@ -476,9 +476,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     margin-top: 20px;
-    min-height: 18px;
 }
 
 .punto2 {
@@ -486,18 +485,11 @@ body{
     height: 12px;
     border-radius: 50%;
     background: #bdbdbd;
-    transition: transform 0.35s ease,
-                background 0.35s ease,
-                opacity 0.35s ease;
-    opacity: 0.65;
 }
 
 .punto2.activo-punto2 {
     background: #00a651;
-    transform: scale(1.35);
-    opacity: 1;
 }
-
 /* Animación cuando cambia */
 .punto2.animar {
     animation: moverPunto 0.35s ease;
