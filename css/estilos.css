@@ -509,3 +509,58 @@ body{
         opacity: 0.65;
     }
 }
+
+/* ===== RECORRIDO VIRTUAL ===== */
+
+.recorrido-virtual {
+    width: 100%;
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+.recorrido-contenido {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recorrido-contenido h2 {
+    font-size: 3.3rem;
+    font-weight: 800;
+    color: #00796b;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.enlace-recorrido {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+
+.enlace-recorrido img {
+    width: 100%;
+    max-width: 1150px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.enlace-recorrido:hover img {
+    transform: scale(1.01);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+.texto-recorrido {
+    margin-top: 28px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.texto-recorrido a {
+    color: #00796b;
+    text-decoration: underline;
+    word-break: break-all;
+}
