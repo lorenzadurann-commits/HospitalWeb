@@ -4,18 +4,6 @@ const contenedorPuntos2 = document.querySelector(".indicadores2");
 let indice2 = 0;
 
 
-function mostrarImagen2(n){
-
-    imagenes2.forEach(imagen=>{
-        imagen.classList.remove("slide-activa");
-    });
-
-    imagenes2[n].classList.add("slide-activa");
-
-    actualizarPuntos2(n);
-}
-
-
 function actualizarPuntos2(indice){
 
     contenedorPuntos2.innerHTML = "";
@@ -30,13 +18,15 @@ function actualizarPuntos2(indice){
 
         inicio = 0;
 
-    }else if(indice > total - 4){
+    } 
+    else if(indice > total - 4){
 
         inicio = total - visibles;
 
-    }else{
+    } 
+    else {
 
-        inicio = indice - 3;
+        inicio = indice - 4;
 
     }
 
@@ -62,15 +52,33 @@ function actualizarPuntos2(indice){
 }
 
 
+
+function mostrarImagen2(n){
+
+    imagenes2.forEach(imagen=>{
+        imagen.classList.remove("slide-activa");
+    });
+
+
+    imagenes2[n].classList.add("slide-activa");
+
+
+    actualizarPuntos2(n);
+
+}
+
+
+
 document.querySelector(".siguiente2").onclick=function(){
 
     indice2++;
 
     if(indice2 >= imagenes2.length){
 
-        indice2=0;
+        indice2 = 0;
 
     }
+
 
     mostrarImagen2(indice2);
 
@@ -84,13 +92,15 @@ document.querySelector(".anterior2").onclick=function(){
 
     if(indice2 < 0){
 
-        indice2=imagenes2.length-1;
+        indice2 = imagenes2.length - 1;
 
     }
+
 
     mostrarImagen2(indice2);
 
 };
+
 
 
 mostrarImagen2(0);
