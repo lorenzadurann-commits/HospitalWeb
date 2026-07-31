@@ -48,6 +48,7 @@ document.querySelector(".anterior").onclick=function(){
 
     mostrarSlide(indice);
 
+
 }; 
 
 
