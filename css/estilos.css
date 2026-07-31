@@ -97,21 +97,21 @@ body {
     border-top: 2px solid #c7c7c7;
 }
 
-.antecedentes h2 {
-    font-size: 42px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 35px;
-    color: #111;
-    letter-spacing: 1px;
+.antecedentes-contenido{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px;
 }
 
-.antecedentes p {
-    font-size: 1.15rem;
-    line-height: 1.9;
-    text-align: justify;
-    margin-bottom: 28px;
-    color: #222;
+.antecedentes h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.antecedentes p{
+    text-align:justify;
+    line-height:1.7;
+    margin-bottom:20px;
 }
 
 .franja-filosofia {
