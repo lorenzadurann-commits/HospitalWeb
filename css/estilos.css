@@ -1,14 +1,21 @@
+body {
+    background: #f3f3f3;
+    font-family: 'Montserrat', sans-serif;
+    color: #222;
+    margin: 0;
+}
+
+.contenedor-principal {
+    width: 88%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
-body{
-
-    font-family:'Montserrat',sans-serif;
-
-} 
 
 .bloque-institucional {
     background: #ececec;
@@ -596,28 +603,25 @@ body{
 }
 
 .datos-hospital {
-    width: 45%;
+    width: 42%;
 }
 
 .datos-hospital h2 {
-    font-size: 1.75rem;      /* más pequeño */
+    font-size: 1.55rem;
     font-weight: 800;
     color: #1f1f1f;
     text-align: center;
     line-height: 1.35;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
     text-transform: uppercase;
-    max-width: 500px;        /* fuerza dos renglones */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .datos-hospital p {
-    font-size: 1.05rem;      /* más pequeño */
-    font-weight: 700;        /* todo en negritas */
+    font-size: 1rem;
+    font-weight: 700;
     color: #222;
     line-height: 1.7;
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .datos-hospital strong {
