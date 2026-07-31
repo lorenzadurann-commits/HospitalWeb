@@ -469,3 +469,51 @@ body{
 .siguiente2 {
     right: 15px;
 }
+
+/* ===== INDICADORES ESTILO GOOGLE SITES ===== */
+
+.indicadores2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+    min-height: 18px;
+}
+
+.punto2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bdbdbd;
+    transition: transform 0.35s ease,
+                background 0.35s ease,
+                opacity 0.35s ease;
+    opacity: 0.65;
+}
+
+.punto2.activo-punto2 {
+    background: #00a651;
+    transform: scale(1.35);
+    opacity: 1;
+}
+
+/* Animación cuando cambia */
+.punto2.animar {
+    animation: moverPunto 0.35s ease;
+}
+
+@keyframes moverPunto {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.55);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.65;
+    }
+}
