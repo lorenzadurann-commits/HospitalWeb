@@ -526,12 +526,13 @@ body{
 }
 
 .recorrido-contenido h2 {
-    font-size: 3.3rem;
+    font-size: 3rem;
     font-weight: 800;
-    color: #00796b;
+    color: #005f55;
     margin-bottom: 35px;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: 1.1;
+    white-space: nowrap;
 }
 
 .enlace-recorrido {
@@ -555,12 +556,66 @@ body{
 
 .texto-recorrido {
     margin-top: 28px;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.45rem;
+    font-weight: 700;
 }
 
 .texto-recorrido a {
-    color: #00796b;
+    color: #005f55;
     text-decoration: underline;
     word-break: break-all;
+    font-weight: 700;
 }
+
+/* ===== UBICACIÓN Y CONTACTO ===== */
+
+.ubicacion-hospital {
+    width: 100%;
+    background: #ffffff;
+    padding: 60px 0;
+}
+
+.ubicacion-contenido {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+
+.mapa-hospital {
+    width: 48%;
+}
+
+.mapa-hospital iframe {
+    width: 100%;
+    height: 420px;
+    border-radius: 4px;
+}
+
+.datos-hospital {
+    width: 45%;
+}
+
+.datos-hospital h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #1f1f1f;
+    text-align: center;
+    line-height: 1.4;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+}
+
+.datos-hospital p {
+    font-size: 1.3rem;
+    color: #222;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.datos-hospital strong {
+    font-weight: 800;
+} 
