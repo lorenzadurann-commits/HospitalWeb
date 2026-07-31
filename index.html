@@ -463,47 +463,71 @@ document.querySelector(".anterior").onclick=function(){
 
 <script>
 
-const puntos2 = document.querySelectorAll('.punto2');
+document.addEventListener('DOMContentLoaded', () => {
 
-function actualizarPuntos(indice) {
+    const imagenes = document.querySelectorAll('.slides-wrapper img');
+    const puntos2 = document.querySelectorAll('.punto2');
+    const btnPrev = document.querySelector('.anterior2');
+    const btnNext = document.querySelector('.siguiente2');
 
-    puntos2.forEach(p => {
-        p.classList.remove('activo-punto2');
-    });
+    let indiceGaleria = 0;
 
-    let posicionVisible;
+    function actualizarPuntos(indice) {
 
-    // ===== COMPORTAMIENTO TIPO GOOGLE SITES =====
+        puntos2.forEach(p => {
+            p.classList.remove('activo-punto2');
+        });
 
-    if (indice < 5) {
-        // Imágenes 1-5
-        // El verde avanza normalmente
-        posicionVisible = indice;
+        let posicionVisible;
 
-    } else if (indice >= imagenes.length - 5) {
-        // Últimas 5 imágenes
-        // El verde se mueve hacia la izquierda
-        posicionVisible = 7 - (imagenes.length - indice);
+        // Primeras imágenes
+        if (indice < 5) {
+            posicionVisible = indice;
 
-    } else {
+        // Últimas imágenes
+        } else if (indice >= imagenes.length - 5) {
+            posicionVisible = 7 - (imagenes.length - indice);
+
         // Zona central
-        // Mantener el verde en el tercer punto desde la derecha
-        posicionVisible = 4;
+        } else {
+            posicionVisible = 4;
+        }
+
+        puntos2[posicionVisible].classList.add('activo-punto2');
     }
 
-    puntos2[posicionVisible].classList.add('activo-punto2');
-}
+    function mostrarImagen(indice) {
 
-function mostrarImagen(indice) {
+        imagenes.forEach(img => {
+            img.classList.remove('slide-activa');
+        });
 
-    imagenes.forEach(img => {
-        img.classList.remove('slide-activa');
-    });
+        imagenes[indice].classList.add('slide-activa');
 
-    imagenes[indice].classList.add('slide-activa');
+        actualizarPuntos(indice);
+    }
 
-    actualizarPuntos(indice);
-}
+    function siguiente() {
+        indiceGaleria = (indiceGaleria + 1) % imagenes.length;
+        mostrarImagen(indiceGaleria);
+    }
+
+    function anterior() {
+        indiceGaleria = (indiceGaleria - 1 + imagenes.length) % imagenes.length;
+        mostrarImagen(indiceGaleria);
+    }
+
+    btnNext.addEventListener('click', siguiente);
+    btnPrev.addEventListener('click', anterior);
+
+    // Inicializar
+    mostrarImagen(indiceGaleria);
+
+    // Automático cada 5 segundos
+    setInterval(siguiente, 5000);
+
+});
+
 </script>
 
 <section class="recorrido-virtual">
