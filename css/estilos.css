@@ -627,3 +627,100 @@ body {
 .datos-hospital strong {
     font-weight: 800;
 }
+
+```css
+/* ===== DIRECTORIO INSTITUCIONAL ===== */
+
+.directorio-hospital {
+    width: 100%;
+    background: #ffffff;
+    padding: 55px 0 65px;
+}
+
+.directorio-contenido {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.directorio-superior {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.directorio-superior h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #111;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.directorio-superior p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.directorio-columnas {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: flex-start;
+}
+
+.columna-directorio {
+    width: 45%;
+}
+
+.cargo {
+    text-align: center;
+    margin-bottom: 34px;
+}
+
+.cargo h3 {
+    font-size: 1.28rem;
+    font-weight: 800;
+    color: #111;
+    text-transform: uppercase;
+    line-height: 1.35;
+    margin-bottom: 6px;
+}
+
+.cargo p {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #222;
+    text-transform: uppercase;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.texto-seccion {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: 0.5px;
+}
+
+.separador-cargo {
+    margin-top: 12px;
+    margin-bottom: 34px;
+}
+
+@media (max-width: 900px) {
+
+    .directorio-columnas {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .columna-directorio {
+        width: 100%;
+    }
+
+    .cargo {
+        margin-bottom: 28px;
+    }
+}
