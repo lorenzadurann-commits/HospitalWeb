@@ -752,3 +752,120 @@ body {
     margin:0 auto;
     border-radius:6px;
 }
+
+/* =========================
+   LÍNEA SEPARADORA
+========================= */
+
+.linea-separadora{
+    width:90%;
+    max-width:1400px;
+    height:1px;
+    background:#bdbdbd;
+    margin:25px auto;
+}
+
+
+/* =========================
+   CARRUSEL FINAL
+========================= */
+
+.carrusel-final{
+    width:100%;
+    background:#e5e5e5;
+    padding:10px 0 20px;
+}
+
+.carrusel-final-contenedor{
+    position:relative;
+    width:95%;
+    max-width:1400px;
+    margin:0 auto;
+}
+
+.slides-final{
+    width:100%;
+    overflow:hidden;
+}
+
+.slide-final{
+    width:100%;
+    display:none;
+    border-radius:6px;
+    aspect-ratio:4 / 3;
+    object-fit:cover;
+}
+
+.slide-final.activa-final{
+    display:block;
+}
+
+.anterior-final,
+.siguiente-final{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+
+    background:rgba(70,20,50,.85);
+    color:white;
+    border:none;
+
+    width:48px;
+    height:72px;
+
+    font-size:2rem;
+    cursor:pointer;
+    z-index:5;
+}
+
+.anterior-final{
+    left:10px;
+}
+
+.siguiente-final{
+    right:10px;
+}
+
+
+/* PUNTOS */
+
+.indicadores-final{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:15px;
+}
+
+.punto-final{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#c7c7c7;
+    transition:background .3s ease;
+}
+
+.punto-final.activo-final{
+    background:#008060;
+}
+
+
+/* =========================
+   TERMINOS Y CONDICIONES
+========================= */
+
+.terminos-condiciones{
+    width:100%;
+    text-align:center;
+    padding:15px 0 40px;
+}
+
+.enlace-terminos{
+    color:#006633;
+    font-size:1.1rem;
+    font-weight:700;
+    text-decoration:underline;
+}
+
+.enlace-terminos:hover{
+    color:#004d26;
+}
