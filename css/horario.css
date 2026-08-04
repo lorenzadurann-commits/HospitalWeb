@@ -1,0 +1,38 @@
+.horarios {
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 0 40px;
+    border-top: 1px solid #c7c7c7;
+}
+
+.horario-bloque {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto 35px;
+    padding: 20px 10px;
+    text-align: center;
+    border: none;
+}
+
+.horario-bloque:last-child {
+    margin-bottom: 0;
+}
+
+.horario-bloque h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.horario-bloque p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 4px;
+    color: #222;
+}
+
+.horario-bloque strong {
+    font-weight: 400;
+}

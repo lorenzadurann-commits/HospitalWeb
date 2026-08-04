@@ -1,0 +1,93 @@
+.carrusel-secundario{
+    width: 100%;
+    background: #e5e5e5;
+    padding: 20px 0 10px;
+}
+
+.carrusel2-contenedor{
+    position: relative;
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.slides-wrapper{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides-wrapper img{
+    width: 100%;
+    display: none;
+    border-radius: 4px;
+}
+
+.slides-wrapper img.slide-activa{
+    display: block;
+}
+
+/* Flechas del carrusel */
+.anterior2,
+.siguiente2{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(70, 20, 50, 0.85);
+    color: white;
+    border: none;
+
+    width: 52px;
+    height: 80px;
+
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.anterior2{
+    left: 10px;
+}
+
+.siguiente2{
+    right: 10px;
+}
+/* ===== INDICADORES ESTILO GOOGLE SITES ===== */
+
+.indicadores2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.punto2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #bdbdbd;
+}
+
+.punto2.activo-punto2 {
+    background: #00a651;
+}
+/* Animación cuando cambia */
+.punto2.animar {
+    animation: moverPunto 0.35s ease;
+}
+
+@keyframes moverPunto {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.4;
+    }
+    50% {
+        transform: scale(1.55);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0.65;
+    }
+}

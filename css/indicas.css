@@ -1,0 +1,42 @@
+.resultados-indicas{
+    width:100%;
+    background:#e5e5e5;
+    padding:20px 0 40px;
+}
+
+.indicas-contenido{
+    width:95%;
+    max-width:1400px;
+    margin:0 auto;
+    text-align:center;
+}
+
+.indicas-contenido h2{
+    color:#006633;
+    font-size:2.2rem;
+    font-weight:700;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.imagen-indicas{
+    width:100%;
+    max-width:1200px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+    border-radius:6px;
+}
+
+/* =========================
+   LÍNEA SEPARADORA
+========================= */
+
+.linea-separadora{
+    width:90%;
+    max-width:1400px;
+    height:1px;
+    background:#bdbdbd;
+    margin:25px auto;
+}
+

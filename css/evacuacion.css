@@ -1,0 +1,50 @@
+.evacuacion {
+    width: 100%;
+    background: #ffffff;
+    padding: 60px 0;
+    border-top: 2px solid #c7c7c7;
+}
+
+.evacuacion-contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    width: 92%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.evacuacion-imagen {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+.evacuacion-imagen img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.evacuacion-texto {
+    width: 40%;
+}
+
+.evacuacion-texto h2 {
+    font-size: 30px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.evacuacion-texto p {
+.puntos-texto p {
+    font-size: 1rem;
+}   
+    line-height: 1.7;
+    color: #222;
+    text-align: justify;
+}

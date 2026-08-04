@@ -1,0 +1,124 @@
+.carrusel {
+    width: 72%;
+    max-width: 850px;
+    margin: 40px auto;
+    position: relative;
+    background: #e5e5e5;
+    padding: 15px;
+}
+
+
+.carrusel-contenedor{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.slide{
+
+    display:none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.slide.activo{
+
+    display: flex;
+
+}
+
+
+.slide img {
+    width: 100%;
+    height: auto;
+    max-height: 1150px;
+    object-fit: contain;
+    border: none;
+}
+
+
+.anterior,
+.siguiente{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    background:rgba(0,0,0,0.5);
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    cursor:pointer;
+
+    font-size:25px;
+
+}
+
+
+.anterior{
+
+    left:15px;
+
+}
+
+
+.siguiente{
+
+    right:15px;
+
+}
+
+.indicadores{
+
+    position:absolute;
+
+    bottom:15px;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+}
+
+.punto{
+
+    width:14px;
+
+    height:14px;
+
+    border-radius:50%;
+
+    background:#cfcfcf;
+
+    transition:0.3s;
+
+}
+
+.punto.activo{
+
+    background:#006b3c;
+
+}
+
+@media(max-width:768px){
+
+    .botones-servicios {
+        grid-template-columns: 1fr;
+    }
+
+}

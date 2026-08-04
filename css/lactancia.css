@@ -1,0 +1,73 @@
+.bloque-institucional {
+    background: #ececec;
+    padding: 30px 0 50px;
+}
+
+.lactancia {
+    border-bottom: 2px solid #c7c7c7;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 40px;
+    width: 92%;
+    max-width: 1450px;
+    margin: 60px auto;
+}
+
+.lactancia-imagen {
+    width: 48%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.lactancia-imagen img {
+    width: 100%;
+    height: auto;
+    max-height: 1100px;
+    object-fit: contain;
+    border: none;
+}
+
+
+.lactancia-texto {
+    width: 52%;
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+
+.lactancia-texto h2 {
+    font-size: 38px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+
+.lactancia-texto li {
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+@media(max-width:768px){
+
+    .lactancia{
+        flex-direction:column;
+    }
+
+    .lactancia-imagen,
+    .lactancia-texto{
+        width:100%;
+    }
+
+}
+
+.carrusel,
+.lactancia {
+    width: 90%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}

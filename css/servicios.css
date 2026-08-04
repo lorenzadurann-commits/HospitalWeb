@@ -1,0 +1,48 @@
+.servicios-hospital {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 92%;
+    max-width: 1400px;
+    margin: 70px auto;
+    padding-top: 40px;
+    border-top: 1px solid #c7c7c7;
+}
+
+.servicios-imagen {
+    width: 42%;
+    display: flex;
+    justify-content: center;
+}
+
+.servicios-imagen img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.servicios-lista {
+    width: 48%;
+}
+
+.servicios-lista h2 {
+    color: #0052cc;
+    font-size: 42px;
+    font-weight: 800;
+    text-align: center;
+    line-height: 1.1;
+    margin-bottom: 28px;
+}
+
+.servicios-lista ul {
+    padding-left: 20px;
+}
+
+.servicios-lista li {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #000;
+}

@@ -1,0 +1,16 @@
+.terminos-condiciones{
+    width:100%;
+    text-align:center;
+    padding:15px 0 40px;
+}
+
+.enlace-terminos{
+    color:#006633;
+    font-size:1.1rem;
+    font-weight:700;
+    text-decoration:underline;
+}
+
+.enlace-terminos:hover{
+    color:#004d26;
+}

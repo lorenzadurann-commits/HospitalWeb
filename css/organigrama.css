@@ -1,0 +1,20 @@
+.organigrama {
+    width: 100%;
+    background: #ffffff;
+    padding: 50px 0;
+}
+
+.organigrama-contenido {
+    width: 92%;
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.organigrama-destacada {
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    border-radius: 6px;
+}

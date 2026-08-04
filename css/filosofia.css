@@ -1,0 +1,64 @@
+.franja-filosofia {
+    width: 100%;
+    background: #f6f6f6;
+    padding: 40px 0 60px;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.filosofia {
+    width: 95%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px 30px;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+.filosofia::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../imagenes/logo_transparente.png") center center no-repeat;
+    background-size: 70%;
+    opacity: 0.08;
+    pointer-events: none;
+}
+
+.filosofia-contenido {
+    position: relative;
+    z-index: 1;
+}
+
+.filosofia h2 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #000;
+    
+}
+
+.filosofia h3 {
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+.filosofia p,
+.filosofia li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.filosofia ul {
+    padding-left: 25px;
+}
+
+.filosofia li {
+    margin-bottom: 18px;
+}
