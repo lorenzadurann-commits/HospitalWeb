@@ -1,73 +1,83 @@
 const boton = document.getElementById("boton-accesibilidad");
 const panel = document.getElementById("panel-accesibilidad");
 
-let escala = 1;
+let escalaActual = parseFloat(localStorage.getItem("escalaTexto")) || 1;
+
+/* ===== Mostrar / ocultar panel ===== */
 
 boton.addEventListener("click", () => {
     panel.classList.toggle("oculto");
 });
 
+document.addEventListener("click", (e) => {
+    if (!panel.contains(e.target) && !boton.contains(e.target)) {
+        panel.classList.add("oculto");
+    }
+});
+
+/* ===== Tamaño de texto ===== */
+
 function aplicarEscala() {
-    document.documentElement.style.fontSize = `${escala * 100}%`;
+    document.documentElement.style.fontSize = `${escalaActual * 100}%`;
+    localStorage.setItem("escalaTexto", escalaActual);
 }
 
 function aumentarTexto() {
-    escala += 0.1;
-    aplicarEscala();
+    if (escalaActual < 1.4) {
+        escalaActual += 0.1;
+        aplicarEscala();
+    }
 }
 
 function disminuirTexto() {
-    escala = Math.max(0.8, escala - 0.1);
-    aplicarEscala();
+    if (escalaActual > 0.8) {
+        escalaActual -= 0.1;
+        aplicarEscala();
+    }
 }
+
+/* ===== Contraste ===== */
 
 function altoContraste() {
     document.body.classList.toggle("alto-contraste");
+
+    localStorage.setItem(
+        "altoContraste",
+        document.body.classList.contains("alto-contraste")
+    );
 }
+
+/* ===== Escala de grises ===== */
 
 function escalaGrises() {
-    document.body.classList.toggle("grises");
+    document.body.classList.toggle("escala-grises");
+
+    localStorage.setItem(
+        "escalaGrises",
+        document.body.classList.contains("escala-grises")
+    );
 }
 
-function subrayarEnlaces() {
-    document.body.classList.toggle("subrayar-enlaces");
-}
-
-function fuenteLegible() {
-    document.body.classList.toggle("fuente-legible");
-}
-
-function aumentarEspaciado() {
-    document.body.classList.toggle("espaciado-amplio");
-}
-
-function cursorGrande() {
-    document.body.classList.toggle("cursor-grande");
-}
-
-function ocultarImagenes() {
-    document.body.classList.toggle("sin-imagenes");
-}
-
-function modoLectura() {
-    document.body.classList.toggle("modo-lectura");
-}
+/* ===== Restablecer ===== */
 
 function restablecer() {
-    escala = 1;
+    escalaActual = 1;
     aplicarEscala();
 
-    document.body.className = document.body.className
-        .split(" ")
-        .filter(c => ![
-            "alto-contraste",
-            "grises",
-            "subrayar-enlaces",
-            "fuente-legible",
-            "espaciado-amplio",
-            "cursor-grande",
-            "sin-imagenes",
-            "modo-lectura"
-        ].includes(c))
-        .join(" ");
+    document.body.classList.remove("alto-contraste", "escala-grises");
+
+    localStorage.removeItem("altoContraste");
+    localStorage.removeItem("escalaGrises");
+}
+
+/* ===== Cargar preferencias guardadas ===== */
+
+aplicarEscala();
+
+if (localStorage.getItem("altoContraste") === "true") {
+    document.body.classList.add("alto-contraste");
+}
+
+if (localStorage.getItem("escalaGrises") === "true") {
+    document.body.classList.add("escala-grises");
 }

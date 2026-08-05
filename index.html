@@ -45,7 +45,7 @@
     <div class="contenedor">
 
 
-        <img src="imagenes/logo2.png"
+        <img src="imagenes/logo.png"
                 alt="Logotipo del Hospital Comunitario"
                 class="logo">
 
@@ -70,15 +70,15 @@
     <div class="botones-servicios">
 
             <a href="procedimientos.html" class="boton-verde">
-        Procedimientos
+        PROCEDIMIENTOS
             </a>
 
             <a href="recursos-humanos.html" class="boton-verde">
-        Recursos Humanos
+        RECURSOS HUMANOS
             </a>
 
             <a href="buzon.html" class="boton-verde">
-        Buzón
+        BUZON DE ATENCION AL SERVIDOR PUBLICO
             </a>
 
             <a href="sinasep.html" class="boton-verde">
@@ -86,11 +86,11 @@
             </a>
 
             <a href="quejas.html" class="boton-verde">
-        Quejas
+        BUZON DE QUEJAS, FELICITACIONES Y SUGERENCIAS
             </a>
 
             <a href="lactancia.html" class="boton-verde">
-        Lactancia
+        CLINICA DE LACTANCIA MATERNA
             </a>
 
     </div>
@@ -102,18 +102,26 @@
     <div class="carrusel-contenedor">
 
         <div class="slide activo">
-            <img src="imagenes/carrusel1.jpg">
+            <img src="imagenes/carrusel_violencia1.jpg">
         </div>
 
         <div class="slide">
-            <img src="imagenes/carrusel2.jpg">
+            <img src="imagenes/carrusel_violencia2.jpg">
         </div>
 
         <div class="slide">
-            <img src="imagenes/carrusel3.jpg">
+            <img src="imagenes/carrusel_violencia3.jpg">
         </div>
 
     </div>
+
+    <div class="indicadores">
+
+    <span class="punto activo"></span>
+    <span class="punto"></span>
+    <span class="punto"></span>
+
+</div>
 
 
     <button class="anterior" aria-label="Imagen anterior">
@@ -127,13 +135,7 @@
 </section>
 
 
-<div class="indicadores">
 
-    <span class="punto activo"></span>
-    <span class="punto"></span>
-    <span class="punto"></span>
-
-</div>
 
 
 <div class="bloque-institucional">
@@ -233,19 +235,6 @@
         </div>
 
     </section>
-</div>
-
-
-<button id="boton-accesibilidad" aria-label="Opciones de accesibilidad">
-    ♿
-</button>
-
-<div id="panel-accesibilidad" class="oculto">
-    <button onclick="aumentarTexto()">A+</button>
-    <button onclick="disminuirTexto()">A-</button>
-    <button onclick="altoContraste()">Contraste</button>
-    <button onclick="escalaGrises()">Grises</button>
-    <button onclick="restablecer()">Restablecer</button>
 </div>
 
 
@@ -448,8 +437,8 @@
 
         <div class="slides-wrapper">
 
-            <img src="imagenes/fachada_panoramica.jpg" class="slide-activa">
-            <img src="imagenes/fachada.jpg">
+            <img src="imagenes/hospital_1" class="slide-activa">
+            <img src="imagenes/hospital_2.jpg">
             <img src="imagenes/Blur_Entrada_consulta_externa.jpg">
             <img src="imagenes/26018.jpg">
             <img src="imagenes/Blur_Recepción 3.jpg">
@@ -706,6 +695,19 @@
 <link rel="stylesheet" href="css/estilos.css">
 <link rel="stylesheet" href="css/header.css">
 
+<button id="boton-accesibilidad" aria-label="Opciones de accesibilidad">
+    ♿
+</button>
+
+<div id="panel-accesibilidad" class="oculto">
+    <button onclick="aumentarTexto()">A+</button>
+    <button onclick="disminuirTexto()">A-</button>
+    <button onclick="altoContraste()">Contraste</button>
+    <button onclick="escalaGrises()">Grises</button>
+    <button onclick="restablecer()">Restablecer</button>
+</div>
+
+<script src="js/accesibilidad.js"></script>
 
 
 </body>

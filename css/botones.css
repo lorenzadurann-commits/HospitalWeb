@@ -1,51 +1,61 @@
-.servicios{
-    background:#d9d9d9;
-    padding:50px 20px;
+/* ===== BOTONES PRINCIPALES ===== */
+
+.servicios {
+    background: #e5e5e5;
+    padding: 28px 0 22px;
 }
 
-.botones-servicios{
-    max-width:1200px;
-    margin:0 auto;
+.botones-servicios {
+    width: 72%;
+    max-width: 980px;
+    margin: 0 auto;
 
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 26px 30px;
 }
 
-.boton-verde{
-    background:#006633;
-    color:white;
-    text-decoration:none;
+.boton-verde {
+    background: #0f8b83;   /* verde turquesa similar al original */
+    color: #ffffff;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    text-decoration: none;
+    text-transform: uppercase;
 
-    height:78px;
-    border-radius:10px;
+    font-size: 0.92rem;
+    font-weight: 500;
 
-    font-size:1.2rem;
-    font-weight:700;
+    height: 38px;
+    padding: 0 18px;
 
-    transition:background .3s ease;
+    border-radius: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: background .2s ease;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.boton-verde:hover{
-    background:#004d26;
+.boton-verde:hover {
+    background: #0c736d;
+    color: #ffffff;
 }
 
-@media (max-width:768px){
+/* Móviles */
+@media (max-width: 768px) {
+    .botones-servicios {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 
-    .botones-servicios{
-        grid-template-columns:1fr;
+    .boton-verde {
+        height: 42px;
+        font-size: 0.9rem;
     }
 }
-
-.boton-verde:focus{
-
-    outline:3px solid #FFD54F;
-
-    outline-offset:4px;
-
-}
-
