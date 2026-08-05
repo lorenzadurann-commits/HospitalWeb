@@ -33,13 +33,7 @@ function disminuirTexto() {
     document.body.classList.remove("texto-grande");
 }
 
-function restablecer() {
-    escalaTexto = 1;
-    aplicarEscalaTexto();
 
-    document.body.classList.remove("alto-contraste");
-    document.body.classList.remove("escala-grises");
-}
 
 function altoContraste() {
     document.body.classList.toggle("alto-contraste");
@@ -49,17 +43,27 @@ function escalaGrises() {
     document.body.classList.toggle("escala-grises");
 }
 
+function espaciadoLetras(){
+
+    document.body.classList.toggle(
+        "espaciado-letras"
+    );
+
+}
+
+
+function interlineado(){
+
+    document.body.classList.toggle(
+        "mayor-interlineado"
+    );
+
+}
+
 function restablecer() {
+    escalaTexto = 1;
+    aplicarEscalaTexto();
+
     document.body.classList.remove("alto-contraste");
     document.body.classList.remove("escala-grises");
 }
-
-const botonEspaciado =
-document.getElementById("espaciadoLetras");
-
-
-botonEspaciado.addEventListener("click",()=>{
-
-    document.body.classList.toggle("espaciado-letras");
-
-});
