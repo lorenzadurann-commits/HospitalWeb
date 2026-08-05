@@ -1,23 +1,18 @@
 .carrusel {
-    width:72%;
-    max-width:53.125rem;
-    margin:2.5rem auto;
+    width:95%;
+    max-width:72rem;
+    margin:1.5rem auto 1rem;   /* 24px */
     position:relative;
     background:#e5e5e5;
     padding:0.9375rem;
 }
 
-
-/* ===== CARRUSEL PRINCIPAL ===== */
-
 .carrusel-contenedor {
     width:100%;
-    max-width:87.5rem;
-    height:40.625rem;
+    height:70.125rem;         /* ~1122px */
     overflow:hidden;
     position:relative;
 }
-
 .carrusel-contenedor .slide {
     width:100%;
     height:100%;

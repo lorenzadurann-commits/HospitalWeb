@@ -1,16 +1,17 @@
 /* ===== CARRUSEL INDICAS ===== */
+/* ===== CARRUSEL INDICAS ===== */
 
 .carrusel-indicas {
     position:relative;
     width:95%;
-    max-width:87.5rem;
+    max-width:72.15rem;       /* ~1154px */
     margin:0 auto;
     background:#e5e5e5;
 }
 
 .slides-indicas {
     width:100%;
-    height:40.625rem;
+    aspect-ratio:1154 / 691;  /* proporción original */
     overflow:hidden;
 }
 
@@ -24,7 +25,6 @@
 .slide-indicas.activa-indicas {
     display:block;
 }
-
 
 /* Flechas */
 

@@ -19,17 +19,20 @@
 }
 
 .lactancia-imagen {
-    width: 48%;
-    display: flex;
-    justify-content: center;
+    width:45%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
 }
 
 .lactancia-imagen img {
-    width: 100%;
-    height: auto;
-    max-height: 68.75rem;                     /* 1100px */
-    object-fit: contain;
-    border: none;
+    width:100%;
+    max-width:35rem;
+    aspect-ratio:760 / 1228;
+    height:auto;
+    object-fit:contain;
+    border-radius:0.25rem;
+    display:block;
 }
 
 .lactancia-texto {

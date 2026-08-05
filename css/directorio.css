@@ -1,18 +1,20 @@
 .directorio-hospital {
     width: 100%;
     background: #ffffff;
-    padding: 3.4375rem 0 4.0625rem;
+    padding: 2.5rem 0 3rem;
 }
 
 .directorio-contenido {
-    width: 92%;
-    max-width: 75rem;
-    margin: 0 auto;
+    width:95%;
+    max-width:72rem;          /* ~1154px */
+    max-height:38.5rem;       /* ~616px */
+    margin:0 auto;
+    overflow:hidden;
 }
 
 .directorio-superior {
-    text-align: center;
-    margin-bottom: 2.8125rem;
+    text-align:center;
+    margin-bottom:1.5rem;     /* 24px */
 }
 
 .directorio-superior h2 {
@@ -31,10 +33,10 @@
 }
 
 .directorio-columnas {
-    display: flex;
-    justify-content: center;
-    gap: 5.625rem;
-    align-items: flex-start;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    gap:3rem;                 /* 48px en lugar de 90px */
 }
 
 .columna-directorio {
@@ -43,7 +45,7 @@
 
 .cargo {
     text-align: center;
-    margin-bottom: 2.125rem;
+    margin-bottom: 1.25rem;
 }
 
 .cargo h3 {
@@ -72,8 +74,8 @@
 }
 
 .separador-cargo {
-    margin-top: 0.75rem;
-    margin-bottom: 2.125rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
 }
 
 @media (max-width: 56.25rem) {

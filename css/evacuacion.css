@@ -6,26 +6,29 @@
 }
 
 .evacuacion-contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.8125rem;
-    width: 92%;
-    max-width: 84.375rem;
-    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2.8125rem;
+    width:92%;
+    max-width:84.375rem;
+    margin:0 auto;
 }
 
 .evacuacion-imagen {
-    width: 48%;
-    display: flex;
-    justify-content: center;
+    width:48%;
+    display:flex;
+    justify-content:center;
 }
 
 .evacuacion-imagen img {
-    width: 100%;
-    max-width: 35rem;
-    height: auto;
-    border-radius: 0.25rem;
+    width:100%;
+    max-width:47.5rem;          /* ~760px */
+    aspect-ratio:760 / 433;
+    height:auto;
+    object-fit:contain;
+    border-radius:0.25rem;
+    display:block;
 }
 
 .evacuacion-texto {

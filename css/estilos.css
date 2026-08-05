@@ -39,4 +39,26 @@ body {
 
 .slides-wrapper img.slide-activa {
     display:block;
+} 
+
+/* ===== SEPARADORES GENERALES ===== */
+
+.separador-contenido {
+    width:95%;
+    max-width:84.75rem;
+    height:1.125rem;
+    margin:0 auto;
+    position:relative;
+}
+
+.separador-contenido::before {
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:50%;
+    transform:translateY(-50%);
+
+    height:0.0625rem;
+    background:#c7c7c7;
 }

@@ -14,30 +14,34 @@
 }
 
 .puntos-contenido {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2.5rem;
-    width: 92%;
-    max-width: 78.125rem;
-    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:2.5rem;
+    width:92%;
+    max-width:84rem;
+    margin:0 auto;
 }
 
 .puntos-imagen {
-    width: 40%;
-    display: flex;
-    justify-content: center;
+    width:48%;
+    display:flex;
+    justify-content:center;
 }
 
+
 .puntos-imagen img {
-    width: 100%;
-    max-width: 26.25rem;
-    height: auto;
-    border-radius: 0.25rem;
+    width:100%;
+    max-width:47.5rem;          /* ~760px */
+    aspect-ratio:760 / 657;
+    height:auto;
+    object-fit:contain;
+    border-radius:0.25rem;
+    display:block;
 }
 
 .puntos-texto {
-    width: 45%;
+    width: 40%;
 }
 
 .puntos-texto h2 {
