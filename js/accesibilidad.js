@@ -1,14 +1,17 @@
-const boton = document.getElementById("boton-accesibilidad");
-const panel = document.getElementById("panel-accesibilidad");
+document.addEventListener("DOMContentLoaded", () => {
 
-// Mostrar / ocultar panel
-if (boton && panel) {
+    const boton = document.getElementById("boton-accesibilidad");
+    const panel = document.getElementById("panel-accesibilidad");
+
+    // Mostrar / ocultar panel
     boton.addEventListener("click", () => {
         panel.classList.toggle("oculto");
     });
-}
 
-// Funciones básicas
+});
+
+// ===== FUNCIONES =====
+
 function aumentarTexto() {
     document.body.style.fontSize = "110%";
 }
