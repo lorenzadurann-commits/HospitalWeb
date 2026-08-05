@@ -1,61 +1,63 @@
 /* ===== BOTONES PRINCIPALES ===== */
 
 .servicios {
-    background: #e5e5e5;
-    padding: 28px 0 22px;
+    background:#e5e5e5;
+    padding:1.75rem 0 1.375rem;
 }
 
 .botones-servicios {
-    width: 72%;
-    max-width: 980px;
-    margin: 0 auto;
+    width:72%;
+    max-width:61.25rem;
+    margin:0 auto;
 
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 26px 30px;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1.625rem 1.875rem;
 }
 
 .boton-verde {
-    background: #0f8b83;   /* verde turquesa similar al original */
-    color: #ffffff;
+    background:#0f8b83;
+    color:#ffffff;
 
-    text-decoration: none;
-    text-transform: uppercase;
+    text-decoration:none;
+    text-transform:uppercase;
 
-    font-size: 0.92rem;
-    font-weight: 500;
+    font-size:0.92rem;
+    font-weight:500;
 
-    height: 38px;
-    padding: 0 18px;
+    height:2.375rem;
+    padding:0 1.125rem;
 
-    border-radius: 3px;
+    border-radius:0.1875rem;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 
-    transition: background .2s ease;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    transition:background .2s ease;
+    text-align:center;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
 }
 
 .boton-verde:hover {
-    background: #0c736d;
-    color: #ffffff;
+    background:#0c736d;
+    color:#ffffff;
 }
 
+
 /* Móviles */
-@media (max-width: 768px) {
+@media (max-width:48rem) {
+
     .botones-servicios {
-        width: 90%;
-        grid-template-columns: 1fr;
-        gap: 16px;
+        width:90%;
+        grid-template-columns:1fr;
+        gap:1rem;
     }
 
     .boton-verde {
-        height: 42px;
-        font-size: 0.9rem;
+        height:2.625rem;
+        font-size:0.9rem;
     }
 }

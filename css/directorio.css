@@ -1,19 +1,18 @@
-
 .directorio-hospital {
     width: 100%;
     background: #ffffff;
-    padding: 55px 0 65px;
+    padding: 3.4375rem 0 4.0625rem;
 }
 
 .directorio-contenido {
     width: 92%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
 }
 
 .directorio-superior {
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 2.8125rem;
 }
 
 .directorio-superior h2 {
@@ -21,7 +20,7 @@
     font-weight: 800;
     color: #111;
     text-transform: uppercase;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 }
 
 .directorio-superior p {
@@ -34,7 +33,7 @@
 .directorio-columnas {
     display: flex;
     justify-content: center;
-    gap: 90px;
+    gap: 5.625rem;
     align-items: flex-start;
 }
 
@@ -44,7 +43,7 @@
 
 .cargo {
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 2.125rem;
 }
 
 .cargo h3 {
@@ -53,7 +52,7 @@
     color: #111;
     text-transform: uppercase;
     line-height: 1.35;
-    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
 }
 
 .cargo p {
@@ -69,19 +68,19 @@
     font-size: 1rem;
     font-weight: 800;
     color: #111;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.03125rem;
 }
 
 .separador-cargo {
-    margin-top: 12px;
-    margin-bottom: 34px;
+    margin-top: 0.75rem;
+    margin-bottom: 2.125rem;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 56.25rem) {
 
     .directorio-columnas {
         flex-direction: column;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .columna-directorio {
@@ -89,6 +88,6 @@
     }
 
     .cargo {
-        margin-bottom: 28px;
+        margin-bottom: 1.75rem;
     }
-} 
+}

@@ -1,20 +1,20 @@
 .pagina-contenido {
     width: 90%;
-    max-width: 1200px;
-    margin: 60px auto;
-    padding: 20px;
+    max-width: 75rem;              /* 1200px */
+    margin: 3.75rem auto;          /* 60px */
+    padding: 1.25rem;              /* 20px */
 }
 
 .pagina-contenido h2 {
-    font-size: 2.2rem;
+    font-size: 2.2rem;             /* ya estaba en rem */
     font-weight: 800;
     color: #006c3b;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;      /* 25px */
 }
 
 .pagina-contenido p {
-    font-size: 1.1rem;
+    font-size: 1.1rem;             /* ya estaba en rem */
     line-height: 1.8;
     color: #222;
-    margin-bottom: 25px;
+    margin-bottom: 1.5625rem;      /* 25px */
 }

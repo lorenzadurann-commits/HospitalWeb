@@ -12,12 +12,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // ===== FUNCIONES =====
 
+let escalaTexto = 1;
+
+function aplicarEscalaTexto() {
+    document.documentElement.style.setProperty(
+        "--escala-texto",
+        escalaTexto
+    );
+}
+
 function aumentarTexto() {
-    document.body.style.fontSize = "110%";
+    escalaTexto += 0.1;
+    aplicarEscalaTexto();
 }
 
 function disminuirTexto() {
-    document.body.style.fontSize = "90%";
+    escalaTexto = Math.max(0.8, escalaTexto - 0.1);
+    aplicarEscalaTexto();
+}
+
+function restablecer() {
+    escalaTexto = 1;
+    aplicarEscalaTexto();
+
+    document.body.classList.remove("alto-contraste");
+    document.body.classList.remove("escala-grises");
 }
 
 function altoContraste() {
@@ -29,7 +48,6 @@ function escalaGrises() {
 }
 
 function restablecer() {
-    document.body.style.fontSize = "100%";
     document.body.classList.remove("alto-contraste");
     document.body.classList.remove("escala-grises");
 }

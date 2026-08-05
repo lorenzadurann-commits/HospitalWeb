@@ -1,12 +1,12 @@
 .organigrama {
     width: 100%;
     background: #ffffff;
-    padding: 50px 0;
+    padding: 3.125rem 0;          /* 50px */
 }
 
 .organigrama-contenido {
     width: 92%;
-    max-width: 1250px;
+    max-width: 78.125rem;         /* 1250px */
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -14,7 +14,7 @@
 
 .organigrama-destacada {
     width: 100%;
-    max-width: 950px;
+    max-width: 59.375rem;         /* 950px */
     height: auto;
-    border-radius: 6px;
+    border-radius: 0.375rem;      /* 6px */
 }

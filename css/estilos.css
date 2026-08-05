@@ -5,9 +5,17 @@ body {
     margin: 0;
 }
 
+:root {
+    --escala-texto: 1;
+}
+
+body {
+    font-size: calc(1rem * var(--escala-texto));
+}
+
 .contenedor-principal {
     width: 88%;
-    max-width: 1250px;
+    max-width: 78.125rem;
     margin: 0 auto;
 }
 
@@ -18,17 +26,17 @@ body {
 }
 
 .slide {
-    display: none;
+    display:none;
 }
 
 .slide.activo {
-    display: block;
+    display:block;
 }
 
 .slides-wrapper img {
-    display: none;
+    display:none;
 }
 
 .slides-wrapper img.slide-activa {
-    display: block;
+    display:block;
 }

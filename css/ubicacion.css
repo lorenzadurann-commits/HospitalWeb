@@ -1,17 +1,17 @@
 .ubicacion-hospital {
     width: 100%;
     background: #ffffff;
-    padding: 60px 0;
+    padding: 3.75rem 0;
 }
 
 .ubicacion-contenido {
     width: 92%;
-    max-width: 1250px;
+    max-width: 78.125rem;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 55px;
+    gap: 3.4375rem;
 }
 
 .mapa-hospital {
@@ -20,8 +20,8 @@
 
 .mapa-hospital iframe {
     width: 100%;
-    height: 420px;
-    border-radius: 4px;
+    height: 26.25rem;
+    border-radius: 0.25rem;
 }
 
 .datos-hospital {
@@ -34,7 +34,7 @@
     color: #1f1f1f;
     text-align: center;
     line-height: 1.35;
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -43,7 +43,7 @@
     font-weight: 700;
     color: #222;
     line-height: 1.7;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .datos-hospital strong {

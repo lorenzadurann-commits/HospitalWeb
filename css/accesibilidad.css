@@ -1,161 +1,92 @@
 /* ===== BOTÓN FLOTANTE ===== */
 
 #boton-accesibilidad {
-    position: fixed;
-    right: 22px;
-    bottom: 22px;
+    position:fixed;
+    right:1.375rem;
+    bottom:1.375rem;
 
-    width: 58px;
-    height: 58px;
+    width:3.625rem;
+    height:3.625rem;
 
-    border: none;
-    border-radius: 50%;
+    border:none;
+    border-radius:50%;
 
-    background: #005f55;
-    color: #fff;
+    background:#005f55;
+    color:#fff;
 
-    font-size: 28px;
-    cursor: pointer;
+    font-size:1.75rem;
+    cursor:pointer;
 
-    z-index: 9999;
+    z-index:9999;
 
-    box-shadow: 0 4px 12px rgba(0,0,0,.25);
-    transition: transform .2s ease, background .2s ease;
+    box-shadow:0 0.25rem 0.75rem rgba(0,0,0,.25);
+    transition:transform .2s ease, background .2s ease;
 }
 
 #boton-accesibilidad:hover {
-    background: #008060;
-    transform: scale(1.08);
+    background:#008060;
+    transform:scale(1.08);
 }
+
 
 /* ===== PANEL ===== */
 
 #panel-accesibilidad {
-    position: fixed;
-    right: 22px;
-    bottom: 92px;
+    position:fixed;
+    right:1.375rem;
+    bottom:5.75rem;
 
-    width: 190px;
+    width:11.875rem;
 
-    background: #ffffff;
-    border-radius: 10px;
-    padding: 12px;
+    background:#ffffff;
+    border-radius:0.625rem;
+    padding:0.75rem;
 
-    box-shadow: 0 8px 20px rgba(0,0,0,.18);
-    z-index: 9999;
+    box-shadow:0 0.5rem 1.25rem rgba(0,0,0,.18);
+    z-index:9999;
 
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    display:flex;
+    flex-direction:column;
+    gap:0.5rem;
 }
 
 #panel-accesibilidad button {
-    width: 100%;
-    border: none;
-    border-radius: 6px;
+    width:100%;
+    border:none;
+    border-radius:0.375rem;
 
-    background: #f1f1f1;
-    color: #222;
+    background:#f1f1f1;
+    color:#222;
 
-    padding: 10px 12px;
-    font-size: .95rem;
-    font-weight: 600;
-    cursor: pointer;
+    padding:0.625rem 0.75rem;
+    font-size:.95rem;
+    font-weight:600;
+    cursor:pointer;
 
-    transition: background .2s ease;
+    transition:background .2s ease;
 }
 
 #panel-accesibilidad button:hover {
-    background: #dfeeee;
+    background:#dfeeee;
 }
 
 .oculto {
-    display: none !important;
+    display:none !important;
 }
+
 
 /* ===== MODOS ===== */
 
 body.alto-contraste {
-    background: #000 !important;
-    color: #fff !important;
+    background:#000 !important;
+    color:#fff !important;
 }
 
 body.alto-contraste * {
-    color: #fff !important;
-    border-color: #fff !important;
+    color:#fff !important;
+    border-color:#fff !important;
 }
 
 body.escala-grises {
-    filter: grayscale(100%);
-}
-
-#panel-accesibilidad {
-    position: fixed;
-    right: 20px;
-    bottom: 90px;
-    background: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.2);
-    z-index: 9999;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.oculto {
-    display: none !important;
-}
-
-#boton-accesibilidad {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 58px;
-    height: 58px;
-    border-radius: 50%;
-    border: none;
-    background: #006c3b;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-    z-index: 10000;
-    box-shadow: 0 4px 12px rgba(0,0,0,.25);
-}
-
-#panel-accesibilidad {
-    position: fixed;
-    right: 20px;
-    bottom: 90px;
-    background: white;
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,.2);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    z-index: 9999;
-}
-
-#panel-accesibilidad button {
-    border: none;
-    background: #006c3b;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 600;
-}
-
-.oculto {
-    display: none !important;
-}
-
-.alto-contraste {
-    background: black !important;
-    color: yellow !important;
-}
-
-.escala-grises {
-    filter: grayscale(100%);
+    filter:grayscale(100%);
 }

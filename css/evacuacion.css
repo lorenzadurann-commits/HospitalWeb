@@ -1,17 +1,17 @@
 .evacuacion {
     width: 100%;
     background: #ffffff;
-    padding: 60px 0;
-    border-top: 2px solid #c7c7c7;
+    padding: 3.75rem 0;
+    border-top: 0.125rem solid #c7c7c7;
 }
 
 .evacuacion-contenido {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 45px;
+    gap: 2.8125rem;
     width: 92%;
-    max-width: 1350px;
+    max-width: 84.375rem;
     margin: 0 auto;
 }
 
@@ -23,9 +23,9 @@
 
 .evacuacion-imagen img {
     width: 100%;
-    max-width: 560px;
+    max-width: 35rem;
     height: auto;
-    border-radius: 4px;
+    border-radius: 0.25rem;
 }
 
 .evacuacion-texto {
@@ -33,17 +33,15 @@
 }
 
 .evacuacion-texto h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 800;
     color: #000;
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
     text-transform: uppercase;
 }
 
 .evacuacion-texto p {
-.puntos-texto p {
     font-size: 1rem;
-}   
     line-height: 1.7;
     color: #222;
     text-align: justify;

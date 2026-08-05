@@ -1,12 +1,12 @@
 .recorrido-virtual {
     width: 100%;
     background: #ffffff;
-    padding: 60px 0;
+    padding: 3.75rem 0;
 }
 
 .recorrido-contenido {
     width: 92%;
-    max-width: 1250px;
+    max-width: 78.125rem;
     margin: 0 auto;
     text-align: center;
 }
@@ -15,7 +15,7 @@
     font-size: 3rem;
     font-weight: 800;
     color: #005f55;
-    margin-bottom: 35px;
+    margin-bottom: 2.1875rem;
     text-transform: uppercase;
     line-height: 1.1;
     white-space: nowrap;
@@ -29,19 +29,20 @@
 
 .enlace-recorrido img {
     width: 100%;
-    max-width: 1150px;
+    max-width: 71.875rem;
     height: auto;
-    border-radius: 4px;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border-radius: 0.25rem;
+    transition: transform 0.25s ease, 
+                box-shadow 0.25s ease;
 }
 
 .enlace-recorrido:hover img {
     transform: scale(1.01);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
 }
 
 .texto-recorrido {
-    margin-top: 28px;
+    margin-top: 1.75rem;
     font-size: 1.45rem;
     font-weight: 700;
 }
