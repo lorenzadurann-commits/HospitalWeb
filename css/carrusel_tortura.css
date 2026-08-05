@@ -12,21 +12,21 @@
     margin:0 auto;
 }
 
-.slides-final{
-    width:100%;
-    overflow:hidden;
+.slides-final {
+    width: 100%;
+    height: 650px;
+    overflow: hidden;
 }
 
-.slide-final{
-    width:100%;
-    display:none;
-    border-radius:6px;
-    aspect-ratio:4 / 3;
-    object-fit:cover;
+.slide-final {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
 }
 
-.slide-final.activa-final{
-    display:block;
+.slide-final.activa-final {
+    display: block;
 }
 
 .anterior-final,
