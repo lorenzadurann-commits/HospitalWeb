@@ -53,3 +53,13 @@ function restablecer() {
     document.body.classList.remove("alto-contraste");
     document.body.classList.remove("escala-grises");
 }
+
+const botonEspaciado =
+document.getElementById("espaciadoLetras");
+
+
+botonEspaciado.addEventListener("click",()=>{
+
+    document.body.classList.toggle("espaciado-letras");
+
+});

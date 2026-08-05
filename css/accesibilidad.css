@@ -91,6 +91,10 @@ body.escala-grises {
     filter:grayscale(100%);
 }
 
+body.espaciado-letras * {
+    letter-spacing:0.08em !important;
+}
+
 /* ===== ESCALA DE TEXTO ===== */
 
 body.texto-grande .logo-link h1,
@@ -110,4 +114,11 @@ body.texto-grande .carrusel-final h2,
 body.texto-grande .terminos h2,
 body.texto-grande .terminos p {
     font-size:1.2em;
+}
+
+body.espaciado-letras p,
+body.espaciado-letras li,
+body.espaciado-letras a,
+body.espaciado-letras button {
+    letter-spacing:0.08em !important;
 }

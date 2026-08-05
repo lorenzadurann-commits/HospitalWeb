@@ -29,7 +29,7 @@
 }
 
 .datos-hospital h2 {
-    font-size: 1.55rem;
+    font-size:calc(2rem * var(--escala-texto));
     font-weight: 800;
     color: #1f1f1f;
     text-align: center;
@@ -39,7 +39,7 @@
 }
 
 .datos-hospital p {
-    font-size: 1rem;
+    font-size:calc(1rem * var(--escala-texto));
     font-weight: 700;
     color: #222;
     line-height: 1.7;
