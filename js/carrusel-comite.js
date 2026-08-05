@@ -1,53 +1,32 @@
-// =========================
-// CARRUSEL PRINCIPAL
-// =========================
+// ===== PRIMER CARRUSEL =====
+const slides = document.querySelectorAll(".carrusel .slide");
+const puntos = document.querySelectorAll(".indicadores .punto");
+const btnAnt = document.querySelector(".anterior");
+const btnSig = document.querySelector(".siguiente");
 
 let indice = 0;
 
-const slides = document.querySelectorAll(".carrusel .slide");
-const puntos = document.querySelectorAll(".carrusel .punto");
-
-
-function mostrarSlide(n){
-
-    slides.forEach(slide=>{
-        slide.classList.remove("activo");
-    });
-
-    puntos.forEach(punto=>{
-        punto.classList.remove("activo");
-    });
-
+function mostrarSlide(n) {
+    slides.forEach(slide => slide.classList.remove("activo"));
+    puntos.forEach(punto => punto.classList.remove("activo"));
 
     slides[n].classList.add("activo");
     puntos[n].classList.add("activo");
-
 }
 
+if (btnSig) {
+    btnSig.addEventListener("click", () => {
+        indice = (indice + 1) % slides.length;
+        mostrarSlide(indice);
+    });
+}
 
-document.querySelector(".siguiente").onclick=function(){
+if (btnAnt) {
+    btnAnt.addEventListener("click", () => {
+        indice = (indice - 1 + slides.length) % slides.length;
+        mostrarSlide(indice);
+    });
+}
 
-    indice++;
-
-    if(indice >= slides.length){
-        indice = 0;
-    }
-
-    mostrarSlide(indice);
-
-};
-
-
-document.querySelector(".anterior").onclick=function(){
-
-    indice--;
-
-    if(indice < 0){
-        indice = slides.length - 1;
-    }
-
-    mostrarSlide(indice);
-
-
-}; 
+mostrarSlide(0);
 

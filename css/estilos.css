@@ -16,3 +16,19 @@ body {
     padding:0;
     box-sizing:border-box;
 }
+
+.slide {
+    display: none;
+}
+
+.slide.activo {
+    display: block;
+}
+
+.slides-wrapper img {
+    display: none;
+}
+
+.slides-wrapper img.slide-activa {
+    display: block;
+}
