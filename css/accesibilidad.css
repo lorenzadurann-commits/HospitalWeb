@@ -125,3 +125,15 @@ body.espaciado-letras a,
 body.espaciado-letras button {
     letter-spacing:0.08em !important;
 }
+
+/* ===== REDUCIR MOVIMIENTO ===== */
+
+body.reducir-movimiento *,
+body.reducir-movimiento *::before,
+body.reducir-movimiento *::after {
+
+    animation:none !important;
+    transition:none !important;
+    scroll-behavior:auto !important;
+
+}

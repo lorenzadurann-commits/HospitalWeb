@@ -67,3 +67,11 @@ function restablecer() {
     document.body.classList.remove("alto-contraste");
     document.body.classList.remove("escala-grises");
 }
+
+function reducirMovimiento(){
+
+    document.body.classList.toggle(
+        "reducir-movimiento"
+    );
+
+}
