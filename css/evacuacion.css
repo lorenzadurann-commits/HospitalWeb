@@ -33,7 +33,7 @@
 }
 
 .evacuacion-texto h2 {
-    font-size: 1.875rem;
+    font-size:calc(1.875rem * var(--escala-texto));
     font-weight: 800;
     color: #000;
     margin-bottom: 1.125rem;
@@ -41,7 +41,7 @@
 }
 
 .evacuacion-texto p {
-    font-size: 1rem;
+    font-size:calc(1rem * var(--escala-texto));
     line-height: 1.7;
     color: #222;
     text-align: justify;

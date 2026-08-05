@@ -16,7 +16,7 @@
 }
 
 .directorio-superior h2 {
-    font-size: 2rem;
+    font-size:calc(2rem * var(--escala-texto));
     font-weight: 800;
     color: #111;
     text-transform: uppercase;
@@ -47,7 +47,7 @@
 }
 
 .cargo h3 {
-    font-size: 1.28rem;
+    font-size:calc(1.28rem * var(--escala-texto));
     font-weight: 800;
     color: #111;
     text-transform: uppercase;
@@ -56,7 +56,7 @@
 }
 
 .cargo p {
-    font-size: 0.98rem;
+    font-size:calc(0.98rem * var(--escala-texto));
     font-weight: 700;
     color: #222;
     text-transform: uppercase;
@@ -65,7 +65,7 @@
 }
 
 .texto-seccion {
-    font-size: 1rem;
+    font-size:calc(1rem * var(--escala-texto));
     font-weight: 800;
     color: #111;
     letter-spacing: 0.03125rem;

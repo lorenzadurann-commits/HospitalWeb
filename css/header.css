@@ -39,7 +39,7 @@
 
 .logo-link h1{
     color:white;
-    font-size:2rem;
+    font-size:calc(2rem * var(--escala-texto));
     font-weight:300;
     margin:0;
     letter-spacing:0.0625rem;

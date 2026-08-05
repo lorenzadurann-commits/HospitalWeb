@@ -24,11 +24,13 @@ function aplicarEscalaTexto() {
 function aumentarTexto() {
     escalaTexto += 0.1;
     aplicarEscalaTexto();
+    document.body.classList.add("texto-grande");
 }
 
 function disminuirTexto() {
     escalaTexto = Math.max(0.8, escalaTexto - 0.1);
     aplicarEscalaTexto();
+    document.body.classList.remove("texto-grande");
 }
 
 function restablecer() {

@@ -59,7 +59,7 @@
     color:#222;
 
     padding:0.625rem 0.75rem;
-    font-size:.95rem;
+    font-size:calc(.95rem * var(--escala-texto));
     font-weight:600;
     cursor:pointer;
 
@@ -89,4 +89,25 @@ body.alto-contraste * {
 
 body.escala-grises {
     filter:grayscale(100%);
+}
+
+/* ===== ESCALA DE TEXTO ===== */
+
+body.texto-grande .logo-link h1,
+body.texto-grande .boton-verde,
+body.texto-grande .filosofia h2,
+body.texto-grande .filosofia h3,
+body.texto-grande .filosofia p,
+body.texto-grande .filosofia li,
+body.texto-grande .horario-bloque h2,
+body.texto-grande .horario-bloque p,
+body.texto-grande .evacuacion-texto h2,
+body.texto-grande .evacuacion-texto p,
+body.texto-grande .directorio-superior h2,
+body.texto-grande .cargo h3,
+body.texto-grande .cargo p,
+body.texto-grande .carrusel-final h2,
+body.texto-grande .terminos h2,
+body.texto-grande .terminos p {
+    font-size:1.2em;
 }
