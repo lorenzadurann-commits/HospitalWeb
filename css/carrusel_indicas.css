@@ -1,0 +1,92 @@
+/* ===== CARRUSEL INDICAS ===== */
+
+.carrusel-indicas {
+    position:relative;
+    width:95%;
+    max-width:87.5rem;
+    margin:0 auto;
+    background:#e5e5e5;
+}
+
+.slides-indicas {
+    width:100%;
+    height:40.625rem;
+    overflow:hidden;
+}
+
+.slide-indicas {
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:none;
+}
+
+.slide-indicas.activa-indicas {
+    display:block;
+}
+
+
+/* Flechas */
+
+.anterior-indicas,
+.siguiente-indicas {
+
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:3rem;
+    height:4.5rem;
+
+    background:rgba(70,20,50,.85);
+    color:white;
+
+    border:none;
+    cursor:pointer;
+
+    font-size:2rem;
+
+    z-index:5;
+}
+
+
+.anterior-indicas {
+    left:0.625rem;
+}
+
+
+.siguiente-indicas {
+    right:0.625rem;
+}
+
+
+/* Puntos */
+
+.indicadores-indicas {
+
+    display:flex;
+    justify-content:center;
+
+    gap:0.625rem;
+
+    margin-top:0.9375rem;
+}
+
+
+.punto-indicas {
+
+    width:0.75rem;
+    height:0.75rem;
+
+    border-radius:50%;
+
+    background:#bdbdbd;
+
+}
+
+
+.punto-indicas.activo-indicas {
+
+    background:#00a651;
+
+}
