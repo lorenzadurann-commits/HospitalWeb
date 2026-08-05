@@ -34,12 +34,12 @@
 
 .lactancia-texto {
     width: 52%;
-    font-size: 1.15rem;
+    font-size:calc(1.5rem * var(--escala-texto));
     line-height: 1.8;
 }
 
 .lactancia-texto h2 {
-    font-size: 2.375rem;                      /* 38px */
+    font-size:calc(2rem * var(--escala-texto));                    /* 38px */
     font-weight: 700;
     margin-bottom: 1.5625rem;                 /* 25px */
 }

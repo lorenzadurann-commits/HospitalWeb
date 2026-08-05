@@ -24,7 +24,7 @@
 }
 
 .directorio-superior p {
-    font-size: 1rem;
+    font-size:calc(1.28rem * var(--escala-texto));
     font-weight: 700;
     color: #222;
     text-transform: uppercase;

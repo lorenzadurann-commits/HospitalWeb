@@ -25,7 +25,7 @@
 .encabezado h1{
 
     color:white;
-    font-size:2rem;
+    font-size:calc(2rem * var(--escala-texto));
     font-weight:300;
     letter-spacing:0.1875rem;
 
