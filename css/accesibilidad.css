@@ -127,13 +127,35 @@ body.espaciado-letras button {
 }
 
 /* ===== REDUCIR MOVIMIENTO ===== */
-
+/* Reducir movimiento */
 body.reducir-movimiento *,
 body.reducir-movimiento *::before,
 body.reducir-movimiento *::after {
 
-    animation:none !important;
-    transition:none !important;
-    scroll-behavior:auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
 
+}
+
+/* Subrayar enlaces */
+body.subrayar-enlaces a {
+    text-decoration: underline !important;
+}
+
+body.resaltar-titulos h1,
+body.resaltar-titulos h2,
+body.resaltar-titulos h3{
+    outline: 3px solid #008000;
+    padding: 5px;
+}
+
+body.cursor-grande,
+body.cursor-grande *{
+    cursor: zoom-in !important;
+}
+
+body.fuente-legible * {
+    font-family: Arial, Verdana, sans-serif !important;
 }

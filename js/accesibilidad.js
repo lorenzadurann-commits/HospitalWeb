@@ -60,18 +60,83 @@ function interlineado(){
 
 }
 
-function restablecer() {
-    escalaTexto = 1;
-    aplicarEscalaTexto();
-
-    document.body.classList.remove("alto-contraste");
-    document.body.classList.remove("escala-grises");
-}
 
 function reducirMovimiento(){
 
     document.body.classList.toggle(
         "reducir-movimiento"
     );
+
+}
+
+function subrayarEnlaces() {
+    document.body.classList.toggle("subrayar-enlaces");
+}
+
+function resaltarTitulos(){
+
+document.body.classList.toggle("resaltar-titulos");
+
+}
+
+function cursorGrande(){
+
+document.body.classList.toggle("cursor-grande");
+
+}
+
+function fuenteLegible(){
+
+    document.body.classList.toggle("fuente-legible");
+
+}
+
+// ===== LECTOR DE PÁGINA =====
+
+let lectura = new SpeechSynthesisUtterance();
+
+
+function leerPagina(){
+
+    let contenido = document.getElementById("contenido-lectura");
+
+    if(!contenido){
+        return;
+    }
+
+
+    lectura.text = contenido.innerText;
+
+    lectura.lang = "es-MX";
+
+    lectura.rate = 1;
+
+    lectura.volume = 1;
+
+
+    speechSynthesis.cancel();
+
+    speechSynthesis.speak(lectura);
+
+}
+
+
+function pausarLectura(){
+
+    speechSynthesis.pause();
+
+}
+
+
+function continuarLectura(){
+
+    speechSynthesis.resume();
+
+}
+
+
+function detenerLectura(){
+
+    speechSynthesis.cancel();
 
 }

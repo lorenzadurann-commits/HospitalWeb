@@ -1,73 +1,87 @@
 .bloque-institucional {
     background: #ececec;
-    padding: 1.875rem 0 3.125rem;      /* 30px 0 50px */
+    padding: 1.875rem 0 3.125rem;
 }
 
 .lactancia {
-    border-bottom: 0.125rem solid #c7c7c7;   /* 2px */
-    padding-bottom: 3.125rem;                 /* 50px */
-    margin-bottom: 3.125rem;                  /* 50px */
-
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 2.5rem;                              /* 40px */
+    gap: 2.5rem;
 
-    width: 92%;
-    max-width: 87.5rem;                       /* 1400px */
-    margin: 3.75rem auto;                     /* 60px */
+    width: 90%;
+    max-width: 87.5rem;          /* 1400px */
+
+    margin: 3.75rem auto;
+    padding-bottom: 3.125rem;
+
+    border-bottom: 0.125rem solid #dadce0;
 }
 
+/* ===== IMAGEN ===== */
+
 .lactancia-imagen {
-    width:45%;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
+    width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .lactancia-imagen img {
-    width:100%;
-    max-width:35rem;
-    aspect-ratio:760 / 1228;
-    height:auto;
-    object-fit:contain;
-    border-radius:0.25rem;
-    display:block;
+    width: 100%;
+    max-width: 47.5rem;          /* 760px */
+    height: auto;
+    object-fit: contain;
+    border: none;
 }
+
+/* ===== TEXTO ===== */
 
 .lactancia-texto {
-    width: 52%;
-    font-size:calc(1.5rem * var(--escala-texto));
-    line-height: 1.8;
+    width: 50%;
+    font-family: Arial, sans-serif;
+    font-size: calc(1.167rem * var(--escala-texto));
+    line-height: 1.38;
+    color: #000;
 }
 
+/* TÍTULO */
 .lactancia-texto h2 {
-    font-size:calc(2rem * var(--escala-texto));                    /* 38px */
+    color: #000;
+    font-family: Arial, sans-serif;
+    font-size: calc(1.5rem * var(--escala-texto));
     font-weight: 700;
-    margin-bottom: 1.5625rem;                 /* 25px */
+    line-height: 1.38;
+    margin: 0 0 0.667rem 0;
+    padding: 0;
+}
+
+/* LISTA */
+.lactancia-texto ol {
+    list-style-type: decimal;
+    padding-left: 1.25rem;       /* 20px */
+    margin: 0;
 }
 
 .lactancia-texto li {
-    margin-bottom: 0.75rem;                   /* 12px */
-    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    font-size: calc(1.167rem * var(--escala-texto));
+    font-weight: 400;
+    line-height: 1.38;
+    margin-bottom: 0.667rem;     /* 8pt aprox */
+    color: #000;
 }
 
-@media (max-width: 48rem) {                 /* 768px */
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 48rem) {
 
     .lactancia {
         flex-direction: column;
+        gap: 1.5rem;
     }
 
     .lactancia-imagen,
     .lactancia-texto {
         width: 100%;
     }
-}
-
-.carrusel,
-.lactancia {
-    width: 90%;
-    max-width: 87.5rem;                       /* 1400px */
-    margin-left: auto;
-    margin-right: auto;
 }

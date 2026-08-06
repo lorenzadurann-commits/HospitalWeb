@@ -1,8 +1,9 @@
 /* ===== BOTONES PRINCIPALES ===== */
 
 .servicios {
-    background:#e5e5e5;
-    padding:1.5rem 0 1.25rem;   /* 24px arriba y abajo */
+    background: #ececec;
+    padding: 2rem 0 0;   /* antes seguramente tenía padding abajo */
+    margin: 0;
 }
 
 .botones-servicios {

@@ -43,12 +43,15 @@ body {
 
 /* ===== SEPARADORES GENERALES ===== */
 
+/* Línea gris fina */
 .separador-contenido {
-    width:95%;
-    max-width:84.75rem;
-    height:1.125rem;
-    margin:0 auto;
-    position:relative;
+    width: 85%;
+    max-width: 75rem;      /* 1200px */
+    height: 0;
+    border-top: 0.0625rem solid #dadce0; /* línea fina */
+    margin: 0 auto 1.5rem;
+    padding: 0;
+    background: transparent;
 }
 
 .separador-contenido::before {

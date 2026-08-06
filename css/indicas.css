@@ -36,9 +36,8 @@
 
 .linea-separadora {
     width: 90%;
-    max-width: 87.5rem;               /* 1400px */
-    height: 0.0625rem;                /* 1px */
-    background: #bdbdbd;
-    margin: 1.5625rem auto;           /* 25px */
+    max-width: 87.5rem;
+    height: 0;
+    border-top: 0.0625rem solid #dadce0;
+    margin: 1.25rem auto;
 }
-
