@@ -1,5 +1,13 @@
 /* ===== BOTÓN FLOTANTE ===== */
 
+:root{
+    --escala-texto:1;
+}
+
+body{
+    font-size:calc(16px * var(--escala-texto));
+}
+
 #boton-accesibilidad {
     position:fixed;
     right:1.375rem;
@@ -100,24 +108,7 @@ body.mayor-interlineado li {
 
 /* ===== ESCALA DE TEXTO ===== */
 
-body.texto-grande .logo-link h1,
-body.texto-grande .boton-verde,
-body.texto-grande .filosofia h2,
-body.texto-grande .filosofia h3,
-body.texto-grande .filosofia p,
-body.texto-grande .filosofia li,
-body.texto-grande .horario-bloque h2,
-body.texto-grande .horario-bloque p,
-body.texto-grande .evacuacion-texto h2,
-body.texto-grande .evacuacion-texto p,
-body.texto-grande .directorio-superior h2,
-body.texto-grande .cargo h3,
-body.texto-grande .cargo p,
-body.texto-grande .carrusel-final h2,
-body.texto-grande .terminos h2,
-body.texto-grande .terminos p {
-    font-size:1.2em;
-}
+
 
 body.espaciado-letras p,
 body.espaciado-letras li,
@@ -158,4 +149,17 @@ body.cursor-grande *{
 
 body.fuente-legible * {
     font-family: Arial, Verdana, sans-serif !important;
+}
+
+/* ===== BOTONES DEL LECTOR ===== */
+
+#panel-accesibilidad button[onclick*="leerPagina"],
+#panel-accesibilidad button[onclick*="Lectura"]{
+    background:#0d6efd;
+    color:#fff;
+}
+
+#panel-accesibilidad button[onclick*="leerPagina"]:hover,
+#panel-accesibilidad button[onclick*="Lectura"]:hover{
+    background:#0b5ed7;
 }

@@ -95,6 +95,18 @@ function fuenteLegible(){
 
 let lectura = new SpeechSynthesisUtterance();
 
+function seleccionarVoz(){
+
+    const voces = speechSynthesis.getVoices();
+
+    const vozEspanol = voces.find(voz =>
+        voz.lang.includes("es")
+    );
+
+    if(vozEspanol){
+        lectura.voice = vozEspanol;
+    }
+}
 
 function leerPagina(){
 
@@ -104,20 +116,16 @@ function leerPagina(){
         return;
     }
 
+    seleccionarVoz();
 
     lectura.text = contenido.innerText;
 
     lectura.lang = "es-MX";
-
     lectura.rate = 1;
-
     lectura.volume = 1;
 
-
     speechSynthesis.cancel();
-
     speechSynthesis.speak(lectura);
-
 }
 
 
@@ -139,4 +147,27 @@ function detenerLectura(){
 
     speechSynthesis.cancel();
 
+}
+
+function restablecer() {
+
+    // Restablecer tamaño de texto
+    escalaTexto = 1;
+    aplicarEscalaTexto();
+
+    // Quitar clases de accesibilidad
+    document.body.classList.remove(
+        "alto-contraste",
+        "escala-grises",
+        "espaciado-letras",
+        "mayor-interlineado",
+        "reducir-movimiento",
+        "subrayar-enlaces",
+        "resaltar-titulos",
+        "cursor-grande",
+        "fuente-legible"
+    );
+
+    // Detener lectura si está activa
+    detenerLectura();
 }
