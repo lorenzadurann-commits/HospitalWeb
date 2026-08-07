@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded",()=>{
 
 const slides = document.querySelectorAll(".carrusel .slide");
-const puntos = document.querySelectorAll(".carrusel .punto");
 
 const anterior = document.querySelector(".carrusel .anterior");
 const siguiente = document.querySelector(".carrusel .siguiente");
-
 
 let indice = 0;
 
@@ -16,13 +14,7 @@ function mostrarSlide(i){
         slide.classList.remove("activo");
     });
 
-    puntos.forEach(punto=>{
-        punto.classList.remove("activo");
-    });
-
-
     slides[i].classList.add("activo");
-    puntos[i].classList.add("activo");
 
 }
 
@@ -31,8 +23,8 @@ siguiente.addEventListener("click",()=>{
 
     indice++;
 
-    if(indice>=slides.length){
-        indice=0;
+    if(indice >= slides.length){
+        indice = 0;
     }
 
     mostrarSlide(indice);
@@ -44,28 +36,16 @@ anterior.addEventListener("click",()=>{
 
     indice--;
 
-    if(indice<0){
-        indice=slides.length-1;
+    if(indice < 0){
+        indice = slides.length - 1;
     }
 
     mostrarSlide(indice);
 
 });
 
-puntos.forEach((punto,i)=>{
 
-
-    punto.addEventListener("click",()=>{
-
-        indice=i;
-
-        mostrarSlide(indice);
-
-    });
+mostrarSlide(indice);
 
 
 });
-
-
-});
-

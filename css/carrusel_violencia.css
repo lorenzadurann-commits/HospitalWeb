@@ -142,3 +142,11 @@
     background:#006b3c;
 
 }
+
+.slide{
+    display:none;
+}
+
+.slide.activo{
+    display:block;
+}
