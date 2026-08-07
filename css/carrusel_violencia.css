@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     background: #ffffff;
+    position:relative;
 }
 
 .carrusel-contenedor {
@@ -71,6 +72,8 @@
     cursor:pointer;
 
     font-size:1.5625rem;
+
+     z-index:10;
 
 }
 
