@@ -52,5 +52,20 @@ anterior.addEventListener("click",()=>{
 
 });
 
+puntos.forEach((punto,i)=>{
+
+
+    punto.addEventListener("click",()=>{
+
+        indice=i;
+
+        mostrarSlide(indice);
+
+    });
+
 
 });
+
+
+});
+
