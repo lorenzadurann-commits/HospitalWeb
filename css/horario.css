@@ -1,12 +1,19 @@
+/* ============================
+       HORARIOS
+============================ */
+
 .horarios {
+
     width:100%;
+
     background:#ffffff;
 
-    padding:3.125rem 0 2.5rem;
+    padding:3rem 0;
 
     border-top:0.0625rem solid #c7c7c7;
 
     margin-top:0;
+
 }
 
 
@@ -14,27 +21,18 @@
 
     width:90%;
 
-    max-width:62.5rem;
+    max-width:800px;
 
-    margin:0 auto 2.1875rem;
+    margin:0 auto 2rem;
 
-    padding:1.25rem 0.625rem;
+    padding:0;
 
     text-align:center;
 
-    border:none;
-
 }
 
 
-.horario-bloque:last-child {
-
-    margin-bottom:0;
-
-}
-
-
-/* TITULO: HORARIO DE VISITAS */
+/* TITULO */
 
 .horario-bloque h2 {
 
@@ -46,7 +44,7 @@
 
     color:#212121;
 
-    line-height:1.6667;
+    line-height:1.2;
 
     text-align:center;
 
@@ -57,17 +55,17 @@
 }
 
 
-/* TEXTO */
+/* TEXTO NORMAL */
 
 .horario-bloque p {
-
-    color:#212121;
 
     font-family:Lato, Arial, sans-serif;
 
     font-size:11pt;
 
     font-weight:400;
+
+    color:#212121;
 
     line-height:1.2;
 

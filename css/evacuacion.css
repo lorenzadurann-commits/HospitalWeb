@@ -1,51 +1,105 @@
+/* ============================
+   RUTA DE EVACUACIÓN
+============================ */
+
 .evacuacion {
-    width: 100%;
-    background: #ffffff;
-    padding: 3.75rem 0;
-    border-top: 0.125rem solid #c7c7c7;
+
+    width:100%;
+
+    background:#ffffff;
+
+    padding:3.75rem 0;
+
+    border-top:0.125rem solid #c7c7c7;
+
 }
+
 
 .evacuacion-contenido {
+
     display:flex;
+
     justify-content:center;
+
     align-items:center;
-    gap:2.8125rem;
-    width:92%;
-    max-width:84.375rem;
+
+    gap:2.5rem;
+
+    width:95%;
+
+    max-width:1138px;
+
     margin:0 auto;
+
 }
+
+
+/* IMAGEN */
 
 .evacuacion-imagen {
-    width:48%;
+
+    flex:0 0 759.734px;
+
     display:flex;
+
     justify-content:center;
+
+    align-items:center;
+
 }
+
 
 .evacuacion-imagen img {
-    width:100%;
-    max-width:47.5rem;          /* ~760px */
-    aspect-ratio:760 / 433;
-    height:auto;
+
+    width:759.734px;
+
+    height:432.688px;
+
     object-fit:contain;
-    border-radius:0.25rem;
+
     display:block;
+
 }
+
+
+/* TEXTO */
 
 .evacuacion-texto {
-    width: 40%;
+
+    flex:1;
+
+    max-width:350px;
+
 }
+
 
 .evacuacion-texto h2 {
+
+    font-family:Lato, Arial, sans-serif;
+
     font-size:calc(1.875rem * var(--escala-texto));
-    font-weight: 800;
-    color: #000;
-    margin-bottom: 1.125rem;
-    text-transform: uppercase;
+
+    font-weight:800;
+
+    color:#000;
+
+    margin:0 0 1.125rem;
+
+    text-transform:uppercase;
+
 }
 
+
 .evacuacion-texto p {
+
+    font-family:Lato, Arial, sans-serif;
+
     font-size:calc(1rem * var(--escala-texto));
-    line-height: 1.7;
-    color: #222;
-    text-align: justify;
+
+    line-height:1.7;
+
+    color:#222;
+
+    text-align:justify;
+
 }
