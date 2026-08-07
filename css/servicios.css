@@ -1,38 +1,30 @@
-.servicios-contenido {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+/* ===== CONTENEDOR GENERAL ===== */
+.servicios-contenido{
+    display:flex;
+    align-items:flex-start;
+    justify-content:center;
+    gap:2rem;
+    max-width:1200px;
+    margin:0 auto;
 }
 
-/* Contenedor fijo */
-.servicio-imagen {
-    width: 661.062px;
-    min-width: 661.062px;
-    max-width: 661.062px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex: none; /* evita que flexbox la agrande */
+/* ===== IMAGEN ===== */
+.servicios-imagen{
+    flex:none;
+    width:661.062px;
+    height:789.141px;
+    overflow:hidden;
 }
 
-/* Imagen exactamente del tamaño original */
-.servicio-imagen img {
-    width: 661.062px;
-    max-width: 661.062px;
-    min-width: 661.062px;
-
-    height: 789.141px;
-    max-height: 789.141px;
-    min-height: 789.141px;
-
-    object-fit: contain;
-    display: block;
-    border-radius: 4px;
+.servicios-imagen img{
+    width:661.062px;
+    height:789.141px;
+    object-fit:contain;
+    display:block;
+    border-radius:4px;
 }
 
-/* La lista ocupa el resto */
-.servicios-lista {
-    flex: 1;
+/* ===== LISTA ===== */
+.servicios-lista{
+    flex:1;
 }
