@@ -1,59 +1,38 @@
 .servicios-contenido {
-    display:flex;
-    gap:2rem;
-    align-items:flex-start;
-    max-width:1400px;
-    margin:auto;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-
+/* Contenedor fijo */
 .servicio-imagen {
-    flex: 0 0 661.02px;
-    display:flex;
-    justify-content:center;
-    align-items:flex-start;
+    width: 661.062px;
+    min-width: 661.062px;
+    max-width: 661.062px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: none; /* evita que flexbox la agrande */
 }
 
-
+/* Imagen exactamente del tamaño original */
 .servicio-imagen img {
-    width:661.02px;
-    height:789.141px;
-    object-fit:contain;
-    display:block;
-    border-radius:0.25rem;
+    width: 661.062px;
+    max-width: 661.062px;
+    min-width: 661.062px;
+
+    height: 789.141px;
+    max-height: 789.141px;
+    min-height: 789.141px;
+
+    object-fit: contain;
+    display: block;
+    border-radius: 4px;
 }
 
-
+/* La lista ocupa el resto */
 .servicios-lista {
-    flex:1;
+    flex: 1;
 }
-
-
-.titulo-servicios {
-    color:#1155cc;
-    font-family:'Proxima Nova', Arial, sans-serif;
-    font-size:0.917rem;
-    font-weight:700;
-    text-align:center;
-    line-height:1.6667;
-    margin:30px 0 20px;
-    margin-top:3.5rem;
-}
-
-
-.servicios-lista ul {
-    list-style-type:square;
-    margin:0;
-    padding-left:1.5rem;
-}
-
-
-.servicios-lista li {
-    font-family:'Proxima Nova', Arial, sans-serif;
-    font-size:calc(1.167rem * var(--escala-texto));
-    font-weight:700;
-    line-height:2.4;
-    color:#000;
-    margin-bottom:0.375rem;
-}
-
