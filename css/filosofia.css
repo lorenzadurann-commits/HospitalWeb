@@ -1,3 +1,7 @@
+/* ============================
+   FRANJA FILOSOFÍA INSTITUCIONAL
+============================ */
+
 .franja-filosofia {
     width: 100%;
     background: #f6f6f6;
@@ -5,6 +9,9 @@
     border-top: 0.0625rem solid #d8d8d8;
     border-bottom: 0.0625rem solid #d8d8d8;
 }
+
+
+/* Contenedor principal */
 
 .filosofia {
     width: 95%;
@@ -16,14 +23,19 @@
     background: transparent;
 }
 
+
+/* Logo transparente de fondo */
+
 .filosofia::before {
     content: "";
     position: absolute;
     inset: 0;
 
-    /* imagen de fondo */
     background:
-        linear-gradient(rgba(255,255,255,0.55), rgba(255,255,255,0.55)),
+        linear-gradient(
+            rgba(255,255,255,0.55),
+            rgba(255,255,255,0.55)
+        ),
         url("../imagenes/logo_transparente.png");
 
     background-position: center center;
@@ -33,68 +45,147 @@
     pointer-events: none;
 }
 
+
+/* Contenido encima del logo */
+
 .filosofia-contenido {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
-.filosofia h2 {
+
+/* ============================
+        TITULO PRINCIPAL
+============================ */
+
+.titulo-filosofia {
+
     color: #000000;
-    font-family: "Proxima Nova", Arial, sans-serif;
-    font-size: calc(1.125rem * var(--escala-texto)); /* 18 pt */
+
+    font-family: 'Proxima Nova', Arial, sans-serif;
+
+    font-size: 18pt;
+
     font-weight: 700;
+
     line-height: 1.38;
+
     text-align: center;
-    margin: 0 0 0.75rem; /* equivalente aproximado a 12px */
+
+    margin: 0 0 25px 0;
+
+    vertical-align: baseline;
 }
 
 
-.filosofia h3 {
+
+/* ============================
+       SUBTITULOS
+    MISIÓN / VISIÓN / VALORES
+============================ */
+
+.subtitulo-filosofia {
+
     color: #000000;
-    font-family: "Proxima Nova", Arial, sans-serif;
-    font-size: calc(0.875rem * var(--escala-texto)); /* 14 pt */
+
+    font-family: 'Proxima Nova', Arial, sans-serif;
+
+    font-size: 14pt;
+
     font-weight: 700;
+
     line-height: 1.38;
+
     text-align: justify;
-    margin: 0.75rem 0 0.75rem;
+
+    margin: 12px 0 8px 0;
+
+    vertical-align: baseline;
 }
 
 
-.filosofia p {
+
+/* ============================
+        TEXTO NORMAL
+============================ */
+
+.texto-filosofia {
+
     color: #000000;
-    font-family: "Proxima Nova", Arial, sans-serif;
-    font-size: calc(0.875rem * var(--escala-texto)); /* 14 pt */
+
+    font-family: 'Proxima Nova', Arial, sans-serif;
+
+    font-size: 14pt;
+
     font-weight: 400;
+
     line-height: 1.38;
+
     text-align: justify;
-    margin: 0 0 0.75rem;
+
+    margin: 12px 0;
+
+    vertical-align: baseline;
 }
 
-.filosofia li {
+
+
+/* ============================
+        LISTA DE VALORES
+============================ */
+
+.lista-valores {
+
     color: #000000;
-    font-family: "Proxima Nova", Arial, sans-serif;
-    font-size: calc(1.167rem * var(--escala-texto));
+
+    font-family: 'Proxima Nova', Arial, sans-serif;
+
+    font-size: 14pt;
+
     font-weight: 400;
+
     line-height: 1.38;
+
     text-align: justify;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    padding: 0;
+
+    margin-top: 12px;
+
+    padding-left: 25px;
+
+    list-style-type: square;
 }
 
-/* Palabras en negrita: Integridad, Compromiso, etc. */
-.filosofia li strong {
+
+
+.lista-valores li {
+
+    margin-bottom: 18px;
+
+    padding-left: 8px;
+
+}
+
+
+
+.lista-valores strong {
+
     color: #000000;
-    font-family: "Proxima Nova", Arial, sans-serif;
-    font-size: calc(1.167rem * var(--escala-texto));
+
+    font-family: 'Proxima Nova', Arial, sans-serif;
+
+    font-size: 14pt;
+
     font-weight: 700;
+
     line-height: 1.38;
 }
 
-.filosofia ul {
-    padding-left: 1.5625rem;
-}
 
-.filosofia .integridad {
+
+/* Primer valor separado como en Google Sites */
+
+.integridad {
+
     margin-top: 1.611rem;
+
 }
