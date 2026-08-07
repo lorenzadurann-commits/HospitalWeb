@@ -1,54 +1,62 @@
+/* ===== PRIMER CARRUSEL ===== */
+
 .carrusel {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    padding: 0;
-    background: #ffffff;
+    width:100%;
+    max-width:1154px;
+    margin:0 auto;
+    padding:0;
+    background:#ffffff;
     position:relative;
 }
 
+
 .carrusel-contenedor {
+
     width:100%;
-    max-width:1280px;
-    height:650px;
+    max-width:1154px;
+
+    height:1122px;
+
     margin:0 auto;
+
     position:relative;
+
     overflow:hidden;
+
 }
 
 
 .carrusel-contenedor .slide {
+
     width:100%;
     height:100%;
+
     display:none;
+
+}
+
+
+.carrusel-contenedor .slide.activo {
+
+    display:block;
+
 }
 
 
 .carrusel-contenedor .slide img {
+
     width:100%;
-    height:650px;
+    height:1122px;
+
     object-fit:cover;
+
     display:block;
+
 }
 
-/* ===== CARRUSEL SECUNDARIO ===== */
 
-.slides-wrapper {
-    width:100%;
-    height:40.625rem;
-    overflow:hidden;
-}
 
-.slides-wrapper img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:none;
-}
-
-.slides-wrapper img.slide-activa {
-    display:block;
-}
+/* ===== FLECHAS PRIMER CARRUSEL ===== */
 
 .carrusel .anterior,
 .carrusel .siguiente {
@@ -80,17 +88,24 @@
 
 
 .carrusel .anterior {
+
     left:20px;
+
 }
 
 
 .carrusel .siguiente {
+
     right:20px;
+
 }
 
-.indicadores{
 
-    
+
+/* ===== PUNTOS DEL CARRUSEL ===== */
+
+.indicadores {
+
     position:absolute;
 
     bottom:20px;
@@ -103,40 +118,27 @@
 
     gap:10px;
 
-    z-index:20;
-
+    z-index:200;
 
 }
 
 
-.punto{
+.punto {
 
-    width:0.875rem;
-
-    height:0.875rem;
+    width:14px;
+    height:14px;
 
     border-radius:50%;
 
     background:#ccc;
-
-    transition:0.3s;
 
     cursor:pointer;
 
 }
 
 
-.punto.activo{
+.punto.activo {
 
     background:#006b3c;
-
-}
-
-
-@media(max-width:48rem){
-
-    .botones-servicios {
-        grid-template-columns:1fr;
-    }
 
 }

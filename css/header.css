@@ -1,11 +1,12 @@
 .encabezado{
     position:absolute;
-    top:1.25rem;
-    left:1.875rem;
-    z-index:10;
+    top:0;
+    left:0;
+    z-index:100;
     background:transparent;
     width:100%;
-    background:white;
+    background:transparent;
+
 }
 
 .encabezado .contenedor {
@@ -21,7 +22,7 @@
 
     justify-content:flex-start;
 
-    padding:10px 20px;
+    padding:15px 30px;
 
     box-sizing:border-box;
 
