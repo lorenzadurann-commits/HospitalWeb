@@ -149,13 +149,23 @@ function detenerLectura(){
 
 }
 
+function modoLectura(){
+    document.body.classList.toggle("modo-lectura");
+}
+
+function ocultarImagenes(){
+
+    document.body.classList.toggle("sin-imagenes");
+
+}
+
 function restablecer() {
 
     // Restablecer tamaño de texto
     escalaTexto = 1;
     aplicarEscalaTexto();
 
-    // Quitar clases de accesibilidad
+    // Quitar todos los modos de accesibilidad
     document.body.classList.remove(
         "alto-contraste",
         "escala-grises",
@@ -165,9 +175,14 @@ function restablecer() {
         "subrayar-enlaces",
         "resaltar-titulos",
         "cursor-grande",
-        "fuente-legible"
+        "fuente-legible",
+        "texto-grande",
+        "modo-lectura",
+        "sin-imagenes"
     );
 
-    // Detener lectura si está activa
+    // Detener lectura de voz
     detenerLectura();
+    alert("Configuración de accesibilidad restablecida");
+
 }

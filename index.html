@@ -41,6 +41,13 @@
 
 <body>
 
+
+<a href="#contenido-lectura" class="saltar-contenido">
+    Saltar al contenido principal
+</a>
+
+<header class="encabezado">
+
 <header class="encabezado">
 
     <div class="contenedor">
@@ -713,55 +720,81 @@
     <script src="js/carrusel-indicas.js"></script>
     <script src="js/carrusel-final.js"></script>
     <script src="js/accesibilidad.js"></script>
+    <script src="js/carrusel-tortura.js"></script>
 
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/header.css">
 
-    <button id="boton-accesibilidad" aria-label="Opciones de accesibilidad">
-        ♿
-    </button>
+    <button 
+    id="boton-accesibilidad"
+    aria-label="Abrir opciones de accesibilidad"
+    title="Opciones de accesibilidad">
 
+    ♿
+
+</button>
     <div id="panel-accesibilidad" class="oculto">
-        <button onclick="aumentarTexto()">A+</button>
-        <button onclick="disminuirTexto()">A-</button>
-        <button onclick="altoContraste()">Contraste</button>
-        <button onclick="escalaGrises()">Grises</button>
-        <button onclick="espaciadoLetras()">Espaciado</button>
-        <button onclick="interlineado()">Interlineado</button>
-        <button onclick="reducirMovimiento()">Reducir Movimiento</button>
-        <button onclick="subrayarEnlaces()">Subrayar enlaces</button>
-        <button onclick="resaltarTitulos()">Resaltar Titulos</button>
-        <button onclick="cursorGrande()">Cursor grande</button>
-        <button onclick="fuenteLegible()">Fuente legible</button>
-        <button onclick="restablecer()">Restablecer</button>
-        <button onclick="leerPagina()">
-            🔊 Leer página
+
+        <button 
+        aria-label="Aumentar tamaño del texto"
+        onclick="aumentarTexto()">
+        A+
         </button>
 
-        <button onclick="pausarLectura()">
-            ⏸ Pausar lectura
-        </button>
+        <button onclick="disminuirTexto()">🔍➖ Disminuir texto</button>
 
-        <button onclick="detenerLectura()">
-            ⏹ Detener lectura
-        </button>
+        <button onclick="altoContraste()">🌗 Alto contraste</button>
 
-        <button onclick="continuarLectura()">
-            ▶ Continuar lectura
-        </button>
+        <button onclick="escalaGrises()">⚫ Escala de grises</button>
+
+        <button onclick="espaciadoLetras()">↔ Espaciado de letras</button>
+
+        <button onclick="interlineado()">↕ Interlineado</button>
+
+        <button onclick="reducirMovimiento()">🌊 Reducir movimiento</button>
+
+        <button onclick="subrayarEnlaces()">🔗 Subrayar enlaces</button>
+
+        <button onclick="resaltarTitulos()">📌 Resaltar títulos</button>
+
+        <button onclick="cursorGrande()">🖱 Cursor grande</button>
+
+        <button onclick="fuenteLegible()">🔤 Fuente legible</button>
+
+        <button onclick="leerPagina()">🔊 Leer página</button>
+
+        <button onclick="pausarLectura()">⏸ Pausar lectura</button>
+
+        <button onclick="continuarLectura()">▶ Continuar lectura</button>
+
+        <button onclick="detenerLectura()">⏹ Detener lectura</button>
+
+        <button onclick="modoLectura()">📖 Modo lectura</button>
+
+        <button onclick="ocultarImagenes()">🖼️ Ocultar imagenes</button>
+
+        <button onclick="detenerAnimaciones()">🛑 Animaciones</button>
+
+        <button onclick="restablecer()">🔄 Restablecer</button>
+
+        
+
 
     </div>
 
 </main>
 
+<script src="js/accesibilidad.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/carrusel-comite.js"></script>
+<script src="js/carrusel-hospital.js"></script>
+<script src="js/carrusel-indicas.js"></script>
+<script src="js/carrusel-tortura.js"></script>
 
-    <script src="js/accesibilidad.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/carrusel-comite.js"></script>
-    <script src="js/carrusel-hospital.js"></script>
-    <script src="js/carrusel-indicas.js"></script>
-    <script src="js/carrusel-tortura.js"></script>
-    <script src="js/carrusel-tortura.js"></script>
+</main>
+
+
+    
 
 
 </body>
