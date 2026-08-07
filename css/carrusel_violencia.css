@@ -1,152 +1,87 @@
 /* ===== PRIMER CARRUSEL ===== */
 
 .carrusel {
-    width:100%;
-    max-width:1154px;
-    margin:0 auto;
-    padding:0;
-    background:#ffffff;
-    position:relative;
+    width: 100%;
+    max-width: 1154px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
 }
-
 
 .carrusel-contenedor {
-
-    width:100%;
-    max-width:1154px;
-
-    height:1122px;
-
-    margin:0 auto;
-
-    position:relative;
-
-    overflow:hidden;
-
+    width: 100%;
+    max-width: 1154px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
-
+/* Slides */
 .carrusel-contenedor .slide {
-
-    width:100%;
-    height:100%;
-
-    display:none;
-
+    width: 100%;
+    display: none;
 }
-
 
 .carrusel-contenedor .slide.activo {
-
-    display:block;
-
+    display: block;
 }
 
-
+/* Imagen del carrusel */
 .carrusel-contenedor .slide img {
-
-    width:100%;
-    height:1122px;
-
-    object-fit:cover;
-
-    display:block;
-
+    width: 100%;
+    height: 650px;          /* ajusta si la quieres más alta */
+    object-fit: cover;
+    display: block;
 }
 
-
-
-/* ===== FLECHAS PRIMER CARRUSEL ===== */
+/* ===== FLECHAS ===== */
 
 .carrusel .anterior,
 .carrusel .siguiente {
-
-    position:absolute;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    background:rgba(0,0,0,0.5);
-
-    color:white;
-
-    border:none;
-
-    width:50px;
-    height:50px;
-
-    border-radius:50%;
-
-    cursor:pointer;
-
-    font-size:25px;
-
-    z-index:100;
-
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 100;
 }
-
 
 .carrusel .anterior {
-
-    left:20px;
-
+    left: 20px;
 }
-
 
 .carrusel .siguiente {
-
-    right:20px;
-
+    right: 20px;
 }
 
-
-
-/* ===== PUNTOS DEL CARRUSEL ===== */
+/* ===== PUNTOS ===== */
 
 .indicadores {
-
-    position:absolute;
-
-    bottom:20px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    display:flex;
-
-    gap:10px;
-
-    z-index:200;
-
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 200;
 }
-
 
 .punto {
-
-    width:14px;
-    height:14px;
-
-    border-radius:50%;
-
-    background:#ccc;
-
-    cursor:pointer;
-
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
 }
-
 
 .punto.activo {
-
-    background:#006b3c;
-
-}
-
-.slide{
-    display:none;
-}
-
-.slide.activo{
-    display:block;
+    background: #006b3c;
 }
