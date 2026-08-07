@@ -4,22 +4,32 @@
     left:1.875rem;
     z-index:10;
     background:transparent;
+    width:100%;
+    background:white;
 }
 
-.contenedor{
+.encabezado .contenedor {
 
-    width:70%;
-    margin:auto;
+    width:100%;
+    max-width:1356px;
+
+    margin:0 auto;
 
     display:flex;
+
     align-items:center;
 
-    gap:1.5625rem;
+    justify-content:flex-start;
+
+    padding:10px 20px;
+
+    box-sizing:border-box;
+
 }
 
 .logo {
     width:5.14rem;      /* ~82px */
-    height:2.5rem;      /* 40px */
+    height:auto;      /* 40px */
     object-fit:contain;
     display:block;
 }
@@ -28,10 +38,10 @@
 
     color:white;
     font-size:calc(1.55rem * var(--escala-texto));
-    font-weight:600;
+    font-weight:700;
     letter-spacing:0.1875rem;
     font-family: 'Montserrat', sans-serif;
-    margin:0;
+     margin:0 0 0 15px;
     line-height:1;
 
 

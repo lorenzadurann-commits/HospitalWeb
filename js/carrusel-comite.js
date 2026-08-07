@@ -1,32 +1,56 @@
-// ===== PRIMER CARRUSEL =====
+document.addEventListener("DOMContentLoaded",()=>{
+
 const slides = document.querySelectorAll(".carrusel .slide");
-const puntos = document.querySelectorAll(".indicadores .punto");
-const btnAnt = document.querySelector(".anterior");
-const btnSig = document.querySelector(".siguiente");
+const puntos = document.querySelectorAll(".carrusel .punto");
+
+const anterior = document.querySelector(".carrusel .anterior");
+const siguiente = document.querySelector(".carrusel .siguiente");
+
 
 let indice = 0;
 
-function mostrarSlide(n) {
-    slides.forEach(slide => slide.classList.remove("activo"));
-    puntos.forEach(punto => punto.classList.remove("activo"));
 
-    slides[n].classList.add("activo");
-    puntos[n].classList.add("activo");
-}
+function mostrarSlide(i){
 
-if (btnSig) {
-    btnSig.addEventListener("click", () => {
-        indice = (indice + 1) % slides.length;
-        mostrarSlide(indice);
+    slides.forEach(slide=>{
+        slide.classList.remove("activo");
     });
-}
 
-if (btnAnt) {
-    btnAnt.addEventListener("click", () => {
-        indice = (indice - 1 + slides.length) % slides.length;
-        mostrarSlide(indice);
+    puntos.forEach(punto=>{
+        punto.classList.remove("activo");
     });
+
+
+    slides[i].classList.add("activo");
+    puntos[i].classList.add("activo");
+
 }
 
-mostrarSlide(0);
 
+siguiente.addEventListener("click",()=>{
+
+    indice++;
+
+    if(indice>=slides.length){
+        indice=0;
+    }
+
+    mostrarSlide(indice);
+
+});
+
+
+anterior.addEventListener("click",()=>{
+
+    indice--;
+
+    if(indice<0){
+        indice=slides.length-1;
+    }
+
+    mostrarSlide(indice);
+
+});
+
+
+});
