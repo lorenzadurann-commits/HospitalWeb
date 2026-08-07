@@ -10,18 +10,20 @@
     gap: 2.5rem;
 
     width: 90%;
-    max-width: 87.5rem;          /* 1400px */
+    max-width: 71.875rem;          /* 1400px */
 
-    margin: 3.75rem auto;
+    margin: 0 auto;
     padding-bottom: 3.125rem;
 
     border-bottom: 0.125rem solid #dadce0;
+    justify-content:center;
+
 }
 
 /* ===== IMAGEN ===== */
 
 .lactancia-imagen {
-    width: 50%;
+    width: 760px;
     display: flex;
     justify-content: center;
 }
@@ -32,15 +34,17 @@
     height: auto;
     object-fit: contain;
     border: none;
+    display:block;
+
 }
 
 /* ===== TEXTO ===== */
 
 .lactancia-texto {
-    width: 50%;
+    width: 350px;
     font-family: Arial, sans-serif;
     font-size: calc(1.167rem * var(--escala-texto));
-    line-height: 1.38;
+    line-height: 1.2;
     color: #000;
 }
 
