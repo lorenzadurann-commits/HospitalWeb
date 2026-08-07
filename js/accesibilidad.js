@@ -186,3 +186,39 @@ function restablecer() {
     alert("Configuración de accesibilidad restablecida");
 
 }
+
+// ===== GUARDAR Y CARGAR PREFERENCIAS =====
+
+function guardarPreferencias(){
+
+    localStorage.setItem(
+        "accesibilidad-clases",
+        document.body.className
+    );
+
+    localStorage.setItem(
+        "escala-texto",
+        escalaTexto
+    );
+}
+
+
+function cargarPreferencias(){
+
+    const clases = localStorage.getItem("accesibilidad-clases");
+    const escala = localStorage.getItem("escala-texto");
+
+    if(clases){
+        document.body.className = clases;
+    }
+
+    if(escala){
+        escalaTexto = parseFloat(escala);
+        aplicarEscalaTexto();
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    cargarPreferencias();
+});
