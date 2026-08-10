@@ -1,69 +1,146 @@
-/* ===== PUNTOS DE REUNIÓN Y ZONAS DE EVACUACIÓN ===== */
+/* ===== PUNTOS DE REUNIÓN ===== */
 
 .puntos-reunion {
     width: 100%;
     background: #ffffff;
-    text-align: left;
     padding: 0;
 }
 
 /* Línea gris superior */
+
 .separador-puntos {
     width: 100%;
     height: 1px;
     background: #d9d9d9;
-    margin: 0 0 24px;
+    margin-bottom: 24px;
 }
 
-/* Título */
-.puntos-reunion-titulo {
+
+/* CONTENEDOR IMAGEN + TEXTO */
+
+.puntos-reunion-contenido {
+    width: 95%;
+    max-width: 1154px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+
+/* IMAGEN */
+
+.puntos-reunion-imagen-contenedor {
+    flex: 0 0 760px;
     width: 760px;
-    max-width: 95%;
-    margin: 0 auto 12px;
+}
+
+.puntos-reunion-imagen {
+    display: block;
+
+    width: 760px;
+    height: 657px;
+
+    object-fit: cover;
+}
+
+
+/* BLOQUE DE TEXTO */
+
+.puntos-reunion-texto-contenedor {
+    flex: 0 0 365.06px;
+
+    width: 365.06px;
+    height: 346.92px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: left;
+}
+
+
+/* TÍTULO */
+
+.puntos-reunion-titulo {
+    margin: 0 0 18px 0;
+
+    width: 100%;
 
     color: #073763;
+
     font-family: 'Lato', Arial, sans-serif;
+
     font-size: 16px;
     font-weight: 700;
+
     line-height: 1.4;
 
     text-align: left;
 }
 
-/* Texto */
+
+/* TEXTO */
+
 .puntos-reunion-texto {
-    width: 760px;
-    max-width: 95%;
-    margin: 0 auto 24px;
+    margin: 0;
+
+    width: 100%;
 
     color: #212121;
+
     font-family: 'Lato', Arial, sans-serif;
+
     font-size: 14.67px;
     font-weight: 400;
+
     line-height: 1.6667;
 
     text-align: left;
 }
 
-/* Imagen 760 × 657 */
-.puntos-reunion-imagen {
-    display: block;
 
-    width: 760px;
-    max-width: 95%;
-    height: 657px;
+/* LÍNEA INFERIOR */
 
-    margin: 0 auto;
-
-    object-fit: cover;
-}
-
-/* Línea gris inferior */
 .separador-puntos-final {
     width: 100%;
     height: 1px;
+
     background: #d9d9d9;
 
     margin-top: 24px;
     margin-bottom: 24px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1200px) {
+
+    .puntos-reunion-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .puntos-reunion-imagen-contenedor {
+        width: 100%;
+        max-width: 760px;
+        flex-basis: auto;
+    }
+
+    .puntos-reunion-imagen {
+        width: 100%;
+        height: auto;
+    }
+
+    .puntos-reunion-texto-contenedor {
+        width: 100%;
+        max-width: 365.06px;
+        height: auto;
+        min-height: 346.92px;
+    }
 }
