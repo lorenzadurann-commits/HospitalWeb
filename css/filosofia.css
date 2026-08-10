@@ -2,13 +2,21 @@
    FRANJA FILOSOFÍA INSTITUCIONAL
 ============================ */
 
+
 .franja-filosofia {
     width: 100%;
-    background: #f6f6f6;
-    padding: 2.5rem 0 3.75rem;
-    border-top: 0.0625rem solid #d8d8d8;
-    border-bottom: 0.0625rem solid #d8d8d8;
+
+    background: transparent;
+
+    /* sin líneas aquí */
+    border: none;
+
+    padding: 0;
+
+    box-sizing: border-box;
 }
+
+
 
 
 /* Contenedor principal */
@@ -59,6 +67,31 @@
 .filosofia-contenido {
     position: relative;
     z-index: 2;
+
+    .filosofia-contenido {
+    width: 95%;
+
+    /* 1356 px como el original */
+    max-width: 84.75rem; /* 1356px */
+
+    /* altura aproximada del original */
+    min-height: 44.6035rem; /* 713.656px */
+
+    margin: 0 auto;
+
+    padding: 3.125rem 3.75rem;
+
+    position: relative;
+
+    background-image: url('../imagenes/logo_transparente.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* que ocupe casi toda la sección */
+    background-size: 82% auto;
+
+    box-sizing: border-box;
+}
 }
 
 
@@ -195,4 +228,38 @@
 
     margin-top: 1.611rem;
 
+}
+
+/* =========================================================
+   SEPARACIÓN FILOSOFÍA → SERVICIOS
+   ========================================================= */
+
+.separador-filosofia-servicios {
+    width: 100%;
+
+    /* 8.5 px arriba de la línea + 32.5 px abajo */
+    padding-top: 8.5px;
+    padding-bottom: 24px;
+
+    position: relative;
+
+    box-sizing: border-box;
+}
+
+.separador-filosofia-servicios::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 8.5px;
+
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 1400px;
+
+    height: 1px;
+
+    background: #d9d9d9;
 }
