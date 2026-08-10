@@ -1,7 +1,7 @@
 /* ===== CARRUSEL PRINCIPAL ===== */
 .carrusel {
     width: 100%;
-    max-width: 1154.41px;   /* ancho igual al original */
+    max-width: 1154px;
     margin: 0 auto;
     background: #ffffff;
 }
@@ -9,13 +9,14 @@
 .carrusel-contenedor {
     position: relative;
     width: 100%;
-    height: 1122.02px;      /* alto igual al original */
+    aspect-ratio: 1154 / 1122;   /* proporción del original */
     overflow: hidden;
+    background: #e5e5e5;         /* para comprobar si carga */
 }
 
 .slide {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    inset: 0;
     display: none;
 }
 
@@ -26,19 +27,18 @@
 .slide img {
     width: 100%;
     height: 100%;
-    object-fit: cover;      /* llena todo el espacio */
+    object-fit: cover;
     display: block;
 }
 
 /* ===== FLECHAS ===== */
-
 .carrusel .anterior,
 .carrusel .siguiente {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background: rgba(0,0,0,0.5);
-    color: white;
+    color: #fff;
     border: none;
     width: 50px;
     height: 50px;
@@ -57,7 +57,6 @@
 }
 
 /* ===== PUNTOS ===== */
-
 .indicadores {
     position: absolute;
     bottom: 20px;
@@ -83,10 +82,5 @@
 @media (max-width: 1200px) {
     .carrusel {
         max-width: 95%;
-    }
-
-    .carrusel-contenedor {
-        height: auto;
-        aspect-ratio: 1154.41 / 1122.02;
     }
 }
