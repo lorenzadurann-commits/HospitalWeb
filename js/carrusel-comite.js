@@ -1,51 +1,27 @@
-document.addEventListener("DOMContentLoaded",()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
-const slides = document.querySelectorAll(".carrusel .slide");
+    const slides = document.querySelectorAll(".carrusel .slide");
+    const anterior = document.querySelector(".carrusel .anterior");
+    const siguiente = document.querySelector(".carrusel .siguiente");
 
-const anterior = document.querySelector(".carrusel .anterior");
-const siguiente = document.querySelector(".carrusel .siguiente");
+    let indice = 0;
 
-let indice = 0;
+    function mostrarSlide(i) {
+        slides.forEach(slide => slide.classList.remove("activo"));
+        slides[i].classList.add("activo");
+    }
 
+    // Mostrar la primera imagen al cargar
+    mostrarSlide(indice);
 
-function mostrarSlide(i){
-
-    slides.forEach(slide=>{
-        slide.classList.remove("activo");
+    siguiente.addEventListener("click", () => {
+        indice = (indice + 1) % slides.length;
+        mostrarSlide(indice);
     });
 
-    slides[i].classList.add("activo");
-
-}
-
-
-siguiente.addEventListener("click",()=>{
-
-    indice++;
-
-    if(indice >= slides.length){
-        indice = 0;
-    }
-
-    mostrarSlide(indice);
-
-});
-
-
-anterior.addEventListener("click",()=>{
-
-    indice--;
-
-    if(indice < 0){
-        indice = slides.length - 1;
-    }
-
-    mostrarSlide(indice);
-
-});
-
-
-mostrarSlide(indice);
-
+    anterior.addEventListener("click", () => {
+        indice = (indice - 1 + slides.length) % slides.length;
+        mostrarSlide(indice);
+    });
 
 });
