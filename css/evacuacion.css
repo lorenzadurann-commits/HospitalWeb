@@ -1,22 +1,31 @@
 /* ===== RUTA DE EVACUACIÓN ===== */
+
 .ruta-evacuacion {
     width: 100%;
     background: #f3f3f3;
-    padding: 32px 0 40px;
+
+    /* 32.5 px desde la imagen hasta la línea */
+    padding: 32.5px 0 0;
+
+    box-sizing: border-box;
 }
 
 .ruta-contenido {
     width: 95%;
     max-width: 1180px;
+
     margin: 0 auto;
 
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 64px;                        /* separación similar al original */
+    gap: 64px;
+
+    box-sizing: border-box;
 }
 
-/* Imagen EXACTA */
+/* ===== IMAGEN ===== */
+
 .ruta-imagen {
     flex: 0 0 760px;
 }
@@ -24,22 +33,23 @@
 .ruta-imagen img {
     width: 760px;
     height: 433px;
+
     object-fit: cover;
     display: block;
 }
 
-/* Texto */
+/* ===== TEXTO ===== */
+
 .ruta-texto {
     flex: 0 0 320px;
 }
 
-/* Título azul */
 .ruta-texto h2 {
     margin: 0 0 28px;
 
     color: #1c4587;
     font-family: 'Proxima Nova', Arial, sans-serif;
-    font-size: 40px;                  /* 30pt ≈ 40px */
+    font-size: 40px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.5px;
@@ -47,27 +57,19 @@
     text-transform: uppercase;
 }
 
-/* Texto descriptivo */
 .ruta-texto p {
     margin: 0;
 
     color: #212121;
     font-family: 'Proxima Nova', Arial, sans-serif;
-    font-size: 18.67px;               /* 14pt ≈ 18.67px */
+    font-size: 18.67px;
     font-weight: 400;
     line-height: 1.6667;
     text-align: left;
 }
 
-/* Línea superior */
-.separador-contenido {
-    width: 95%;
-    max-width: 1180px;
-    margin: 0 auto 32px;
-    border-top: 1px solid #d9d9d9;
-}
-
 /* ===== RESPONSIVE ===== */
+
 @media (max-width: 1100px) {
 
     .ruta-contenido {
@@ -91,4 +93,22 @@
     .ruta-texto p {
         text-align: center;
     }
+}
+
+/* =========================================================
+   SEPARADOR DESPUÉS DE RUTA DE EVACUACIÓN
+   32.5 px arriba y 32.5 px abajo
+   ========================================================= */
+
+.separador-ruta {
+    width: 90%;
+    max-width: 1180px;
+
+    height: 18px;
+
+    margin: 32.5px auto 32.5px;
+
+    border-top: 1px solid #d9d9d9;
+
+    box-sizing: border-box;
 }

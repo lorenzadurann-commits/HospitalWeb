@@ -8,20 +8,30 @@
     margin:0 auto;
 }
 
-/* ===== IMAGEN ===== */
-.servicios-imagen{
-    flex:none;
-    width:661.062px;
-    height:789.141px;
-    overflow:hidden;
+/* =========================================================
+   ELIMINAR LNEA GRIS DEBAJO DE LA IMAGEN
+   ========================================================= */
+
+.servicios-imagen {
+    border: none !important;
+    border-bottom: none !important;
+
+    box-shadow: none !important;
+    outline: none !important;
+
+    background: transparent;
 }
 
-.servicios-imagen img{
-    width:661.062px;
-    height:789.141px;
-    object-fit:contain;
-    display:block;
-    border-radius:4px;
+.servicios-imagen img {
+    border: none !important;
+    border-bottom: none !important;
+
+    box-shadow: none !important;
+    outline: none !important;
+
+    display: block;
+
+    vertical-align: top; /* evita espacios fantasma debajo de imágenes */
 }
 
 /* ===== LISTA ===== */
@@ -29,22 +39,40 @@
     flex:1;
 }
 
+/* =========================================================
+   TÍTULO SERVICIOS DEL HOSPITAL
+   ========================================================= */
+
 .titulo-servicios {
+    box-sizing: border-box;
+
+    display: block;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
 
     color: #1155cc;
 
-    font-family: 'Proxima Nova', Arial, sans-serif;
+    font-family: "Proxima Nova", Arial, sans-serif;
 
-    font-size:calc(1.167rem * var(--escala-texto));
+    /* 34 pt ≈ 45.33 px */
+    font-size: calc(45.3333px * var(--escala-texto));
 
     font-weight: 700;
 
+    line-height: 54.4px;
+
+    letter-spacing: 0.5px;
+
     text-align: center;
 
-    line-height: 1.6667;
+    text-transform: uppercase;
 
-    margin: 30px 0 12px;
+    overflow-wrap: break-word;
 
+    text-size-adjust: 100%;
 }
 
 .servicios-lista ul {
@@ -74,4 +102,25 @@
 
     padding: 0;
 
+}
+
+.servicios-lista .titulo-servicios {
+    color: #1155cc !important;
+
+    font-family: "Proxima Nova", Arial, sans-serif !important;
+
+    font-size: calc(45.3333px * var(--escala-texto)) !important;
+
+    font-weight: 700 !important;
+
+    line-height: 54.4px !important;
+
+    letter-spacing: 0.5px !important;
+
+    text-align: center !important;
+
+    text-transform: uppercase;
+
+    margin: 0 !important;
+    padding: 0 !important;
 }
