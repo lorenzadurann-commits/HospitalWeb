@@ -2,8 +2,8 @@
 
 .antecedentes {
     background:transparent;
-    padding: 2.1875rem 1.5625rem;
-    border-top: 0.0625rem solid #dadce0;
+    padding: 24px 2.1875rem 1.5625rem;
+    border-top: none;
 }
 
 .antecedentes-contenido {

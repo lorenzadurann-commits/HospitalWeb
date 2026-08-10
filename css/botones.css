@@ -1,24 +1,27 @@
 /* =========================================================
-   BOTONES PRINCIPALES
+   FRANJA DE BOTONES VERDES
    ========================================================= */
 
 .servicios {
     width: 100%;
+
+    /* fondo gris correcto */
     background: rgba(242, 242, 242, 1);
 
-    /* 24 px de separación respecto a las líneas */
+    /* 24 px desde la imagen superior */
     padding: 24px 0;
 
     margin: 0;
+
+    position: relative;
     box-sizing: border-box;
 }
 
 
 /* =========================================================
-   LÍNEAS GRISES SUPERIOR E INFERIOR
+   SOLO LÍNEA INFERIOR
    ========================================================= */
 
-.servicios::before,
 .servicios::after {
     content: "";
 
@@ -31,22 +34,14 @@
 
     background: #d9d9d9;
 
-    margin-left: auto;
-    margin-right: auto;
+    margin: 24px auto 0 auto;
 }
 
 
-/* 24 px entre línea superior y botones */
+/* IMPORTANTE: eliminar la línea superior */
 .servicios::before {
-    margin-bottom: 24px;
+    content: none;
 }
-
-
-/* 24 px entre botones y línea inferior */
-.servicios::after {
-    margin-top: 24px;
-}
-
 
 /* =========================================================
    CONTENEDOR DE BOTONES
