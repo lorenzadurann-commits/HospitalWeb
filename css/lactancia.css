@@ -1,6 +1,12 @@
 .bloque-institucional {
-    background: #ececec;
-    padding: 1.875rem 0 3.125rem;
+     background: rgba(242, 242, 242, 1);
+
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    box-sizing: border-box;
 }
 
 .lactancia {
@@ -9,7 +15,7 @@
     align-items: flex-start;
     gap: 2.5rem;
 
-    width: 90%;
+    width: 95%;
     max-width: 71.875rem;          /* 1400px */
 
     margin: 0 auto;
@@ -17,6 +23,8 @@
 
     border-bottom: 0.125rem solid #dadce0;
     justify-content:center;
+
+    box-sizing: border-box;
 
 }
 
@@ -88,4 +96,54 @@
     .lactancia-texto {
         width: 100%;
     }
+}
+
+/* =========================================================
+   SEPARADOR ANTES DE LACTANCIA
+   ========================================================= */
+
+.separador-lactancia {
+    width: 100%;
+
+    /* 1 px de línea + 8.5 px blancos */
+    height: 9.5px;
+
+    background: #ffffff;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* Línea gris superior */
+.separador-lactancia::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    max-width: 1400px;
+
+    height: 1px;
+
+    background: #d9d9d9;
+}
+
+
+/* =========================================================
+   BLOQUE LACTANCIA
+   ========================================================= */
+
+.bloque-institucional {
+    width: 100%;
+
+    background: rgba(242, 242, 242, 1);
+
+    /* 24 px desde el final de lo blanco */
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    box-sizing: border-box;
 }

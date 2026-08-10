@@ -77,36 +77,48 @@
     right: 20px;
 }
 
+/* =========================================================
+   INDICADORES DEL PRIMER CARRUSEL
+   ========================================================= */
+
 .indicadores {
-    position: absolute;
-
-    bottom: 20px;
-    left: 50%;
-
-    transform: translateX(-50%);
-
+    position: static;
     display: flex;
     justify-content: center;
     align-items: center;
 
     gap: 10px;
 
-    z-index: 200;
+    /* 34 px desde el borde inferior de la imagen */
+    margin-top: 34px;
+
+    width: 100%;
 }
 
+
+/* =========================================================
+   PUNTOS
+   ========================================================= */
+
 .punto {
-    width: 14px;
-    height: 14px;
+    width: 10px;
+    height: 10px;
+
+    min-width: 10px;
+    min-height: 10px;
 
     border-radius: 50%;
 
-    background: #cccccc;
+    background: #bdbdbd;
 
-    cursor: pointer;
+    display: block;
 
-    transition: background 0.3s ease;
+    box-sizing: border-box;
 }
 
+
+/* Punto correspondiente a la imagen activa */
+
 .punto.activo {
-    background: #006b3c;
+    background: #00a651;
 }
