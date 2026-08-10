@@ -87,12 +87,13 @@
     justify-content: center;
     align-items: center;
 
-    gap: 10px;
+    gap: 0.625rem;      /* 10 px entre puntos */
 
-    /* 34 px desde el borde inferior de la imagen */
-    margin-top: 34px;
+    /* 34 px desde la imagen */
+    margin-top: 2.125rem;
 
-    width: 100%;
+    /* 24 px hasta la línea gris */
+    margin-bottom: 1.5rem;
 }
 
 
@@ -101,8 +102,9 @@
    ========================================================= */
 
 .punto {
-    width: 10px;
-    height: 10px;
+    width: 0.625rem;    /* 10 px */
+    height: 0.625rem;   /* 10 px */
+
 
     min-width: 10px;
     min-height: 10px;
@@ -114,6 +116,9 @@
     display: block;
 
     box-sizing: border-box;
+    cursor: pointer;
+
+    transition: background 0.25s ease;
 }
 
 
