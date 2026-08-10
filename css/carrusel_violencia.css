@@ -37,3 +37,69 @@
     height: 100%;
     object-fit: cover;
 }
+
+.carrusel .anterior,
+.carrusel .siguiente {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+
+    border: none;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    font-size: 25px;
+
+    z-index: 100;
+}
+
+.carrusel .anterior {
+    left: 20px;
+}
+
+.carrusel .siguiente {
+    right: 20px;
+}
+
+.indicadores {
+    position: absolute;
+
+    bottom: 20px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 200;
+}
+
+.punto {
+    width: 14px;
+    height: 14px;
+
+    border-radius: 50%;
+
+    background: #cccccc;
+
+    cursor: pointer;
+
+    transition: background 0.3s ease;
+}
+
+.punto.activo {
+    background: #006b3c;
+}

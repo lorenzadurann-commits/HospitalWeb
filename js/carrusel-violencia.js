@@ -1,19 +1,17 @@
-console.log(">>> CARRUSEL VIOLENCIA CARGADO <<<");
-
 document.addEventListener("DOMContentLoaded", () => {
 
     const carruseles = document.querySelectorAll(".carrusel");
 
     console.log("Carruseles encontrados:", carruseles.length);
 
-    // resto del código...
-
-
     carruseles.forEach((carrusel) => {
 
         const slides = carrusel.querySelectorAll(".slide");
+
         const anterior = carrusel.querySelector(".anterior");
         const siguiente = carrusel.querySelector(".siguiente");
+
+        const puntos = carrusel.querySelectorAll(".punto");
 
         if (slides.length === 0) {
             return;
@@ -21,20 +19,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let indice = 0;
 
+
         function mostrarSlide(i) {
 
+            /* Quitar activo de todas las imágenes */
             slides.forEach((slide) => {
                 slide.classList.remove("activo");
             });
 
+
+            /* Quitar activo de todos los puntos */
+            puntos.forEach((punto) => {
+                punto.classList.remove("activo");
+            });
+
+
+            /* Activar imagen */
             slides[i].classList.add("activo");
+
+
+            /* Activar punto correspondiente */
+            if (puntos[i]) {
+                puntos[i].classList.add("activo");
+            }
         }
 
-        // Mostrar la primera imagen
+
+        /* Primera imagen */
         mostrarSlide(indice);
 
-        // Flecha siguiente
+
+        /* FLECHA SIGUIENTE */
+
         if (siguiente) {
+
             siguiente.addEventListener("click", () => {
 
                 indice++;
@@ -44,11 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 mostrarSlide(indice);
+
             });
+
         }
 
-        // Flecha anterior
+
+        /* FLECHA ANTERIOR */
+
         if (anterior) {
+
             anterior.addEventListener("click", () => {
 
                 indice--;
@@ -58,10 +81,26 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 mostrarSlide(indice);
+
             });
+
         }
+
+
+        /* PUNTOS */
+
+        puntos.forEach((punto, i) => {
+
+            punto.addEventListener("click", () => {
+
+                indice = i;
+
+                mostrarSlide(indice);
+
+            });
+
+        });
 
     });
 
 });
-
