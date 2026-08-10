@@ -19,17 +19,22 @@
     text-align: center;
 }
 
-.imagen-indicas-final {
-    width:100%;
-    max-width:72.15rem;
-    aspect-ratio:1154 / 644;
-    height:auto;
-    object-fit:contain;
-    display:block;
-    margin:0 auto;
-    border-radius:0.25rem;
-}
+/* ===== IMAGEN DEBAJO DEL CARRUSEL INDICAS ===== */
 
+.imagen-indicas-final {
+    display: block;
+
+    width: 1154.410px;
+    height: 643.938px;
+
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+
+    border-radius: 0.25rem;
+}
 /* =========================
    LÍNEA SEPARADORA
 ========================= */
@@ -40,4 +45,40 @@
     height: 0;
     border-top: 0.0625rem solid #dadce0;
     margin: 1.25rem auto;
+}
+
+/* ===== TÍTULO RESULTADOS INDICAS ===== */
+
+.titulo-indicas {
+    box-sizing: border-box;
+
+    display: block;
+    width: 100%;
+
+    margin: 0 0 25px 0;
+    padding: 0;
+
+    color: rgb(0, 102, 51);
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: calc(35.2px * var(--escala-texto));
+    font-weight: 700;
+
+    line-height: 42.24px;
+
+    text-align: center;
+
+    text-size-adjust: 100%;
+}
+
+@media (max-width: 1200px) {
+
+    .imagen-indicas-final {
+        width: 95%;
+        height: auto;
+        aspect-ratio: 1154.410 / 643.938;
+        object-fit: cover;
+    }
+
 }
