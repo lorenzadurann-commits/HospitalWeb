@@ -1,31 +1,15 @@
 .carrusel-contenedor {
     position: relative;
-    width: 760px;
-    height: 500px;
-    margin: 20px auto;
+    width: 1154px;
+    height: 1122px;
+    margin: 0 auto;
     background: red;
+    overflow: hidden;
 }
 
-.carrusel-contenedor .slides-wrapper {
+.carrusel {
     position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.carrusel-contenedor .slide {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-}
-
-.carrusel-contenedor .slide.activo {
-    display: block;
-}
-
-.carrusel-contenedor .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 1154px;
+    height: 1122px;
+    margin: 0 auto;
 }
