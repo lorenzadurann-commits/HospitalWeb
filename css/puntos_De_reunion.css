@@ -1,61 +1,69 @@
+/* ===== PUNTOS DE REUNIÓN Y ZONAS DE EVACUACIÓN ===== */
+
 .puntos-reunion {
     width: 100%;
     background: #ffffff;
-    padding: 3.125rem 0 4.375rem;
+    text-align: left;
+    padding: 0;
 }
 
-/* Línea gris centrada */
-.separador-contenido {
-    width: 85%;
-    max-width: 75rem;
-    height: 0.0625rem;
-    background: #c7c7c7;
-    margin: 0 auto 2.8125rem;
+/* Línea gris superior */
+.separador-puntos {
+    width: 100%;
+    height: 1px;
+    background: #d9d9d9;
+    margin: 0 0 24px;
 }
 
-.puntos-contenido {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:2.5rem;
-    width:92%;
-    max-width:84rem;
-    margin:0 auto;
+/* Título */
+.puntos-reunion-titulo {
+    width: 760px;
+    max-width: 95%;
+    margin: 0 auto 12px;
+
+    color: #073763;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    text-align: left;
 }
 
-.puntos-imagen {
-    width:48%;
-    display:flex;
-    justify-content:center;
+/* Texto */
+.puntos-reunion-texto {
+    width: 760px;
+    max-width: 95%;
+    margin: 0 auto 24px;
+
+    color: #212121;
+    font-family: 'Lato', Arial, sans-serif;
+    font-size: 14.67px;
+    font-weight: 400;
+    line-height: 1.6667;
+
+    text-align: left;
 }
 
+/* Imagen 760 × 657 */
+.puntos-reunion-imagen {
+    display: block;
 
-.puntos-imagen img {
-    width:100%;
-    max-width:47.5rem;          /* ~760px */
-    aspect-ratio:760 / 657;
-    height:auto;
-    object-fit:contain;
-    border-radius:0.25rem;
-    display:block;
+    width: 760px;
+    max-width: 95%;
+    height: 657px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
 }
 
-.puntos-texto {
-    width: 40%;
-}
+/* Línea gris inferior */
+.separador-puntos-final {
+    width: 100%;
+    height: 1px;
+    background: #d9d9d9;
 
-.puntos-texto h2 {
-    font-size:calc(1.875rem * var(--escala-texto));
-    font-weight: 800;
-    color: #000;
-    margin-bottom: 1.125rem;
-    text-transform: uppercase;
-    line-height: 1.2;
-}
-
-.puntos-texto p {
-    font-size:calc(1rem * var(--escala-texto));
-    line-height: 1.7;
-    color: #222;
-    text-align: justify;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }

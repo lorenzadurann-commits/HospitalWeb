@@ -1,8 +1,13 @@
+console.log(">>> CARRUSEL VIOLENCIA CARGADO <<<");
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const carruseles = document.querySelectorAll(".carrusel");
 
     console.log("Carruseles encontrados:", carruseles.length);
+
+    // resto del código...
+
 
     carruseles.forEach((carrusel) => {
 
@@ -59,3 +64,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
