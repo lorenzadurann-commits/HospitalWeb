@@ -1,8 +1,21 @@
 // ===== SEGUNDO CARRUSEL =====
-const imagenes2 = document.querySelectorAll(".slides-wrapper img");
-const btnAnt2 = document.querySelector(".anterior2");
-const btnSig2 = document.querySelector(".siguiente2");
-const contenedorPuntos2 = document.querySelector(".indicadores2");
+const contenedor2 = document.querySelector(".carrusel2-contenedor");
+
+const imagenes2 = contenedor2
+    ? contenedor2.querySelectorAll(".slides-wrapper img")
+    : [];
+
+const btnAnt2 = contenedor2
+    ? contenedor2.querySelector(".anterior2")
+    : null;
+
+const btnSig2 = contenedor2
+    ? contenedor2.querySelector(".siguiente2")
+    : null;
+
+const contenedorPuntos2 = contenedor2
+    ? contenedor2.querySelector(".indicadores2")
+    : null;
 
 let indice2 = 0;
 

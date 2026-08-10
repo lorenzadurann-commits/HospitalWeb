@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const carruseles = document.querySelectorAll(".carrusel");
 
+    console.log("Carruseles encontrados:", carruseles.length);
+
     carruseles.forEach((carrusel) => {
 
         const slides = carrusel.querySelectorAll(".slide");
