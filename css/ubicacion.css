@@ -50,3 +50,38 @@
     font-weight: 800;
 }
 
+/* ===== TÍTULO JUVENTINO ROSAS ===== */
+
+.titulo-juventino {
+    box-sizing: border-box;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    color: rgb(33, 33, 33);
+
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+
+    text-align: center;
+
+    line-height: 50px;
+
+    overflow-wrap: break-word;
+} 
+
+.direccion-texto {
+    box-sizing: border-box;
+    color: rgb(33, 33, 33);
+    font-family: "Proxima Nova", Arial, sans-serif;
+    font-size: 18.6667px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.1117px;
+    overflow-wrap: break-word;
+    margin: 0;
+}
+

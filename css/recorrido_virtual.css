@@ -12,19 +12,26 @@
 /* ===== TÍTULO ===== */
 
 .recorrido-titulo {
+    box-sizing: border-box;
+
+    width: 100%;
+
     margin: 0 0 24px 0;
     padding: 0;
 
-    font-family: 'Lato', Arial, sans-serif !important;
-    font-size: 45.3333px !important;
-    font-weight: 700 !important;
+    color: rgb(0, 104, 91);
 
-    line-height: 54.4px !important;
-    letter-spacing: 0.5px !important;
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 45.3333px;
+    font-style: normal;
+    font-weight: 700;
 
-    color: #00685B !important;
+    line-height: 54.4px;
+    letter-spacing: 0.5px;
 
-    text-align: left;
+    text-align: center;
+
+    overflow-wrap: break-word;
 }
 
 
