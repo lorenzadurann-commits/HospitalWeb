@@ -69,3 +69,11 @@ body {
     height:0.0625rem;
     background:#c7c7c7;
 }
+
+/* PRUEBA DEFINITIVA HORARIOS */
+.horarios * {
+    font-family: Arial, sans-serif !important;
+    text-align: center !important;
+    color: red !important;
+    font-weight: 900 !important;
+}
