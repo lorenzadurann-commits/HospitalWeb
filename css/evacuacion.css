@@ -1,105 +1,94 @@
-/* ============================
-   RUTA DE EVACUACIÓN
-============================ */
-
-.evacuacion {
-
-    width:100%;
-
-    background:#ffffff;
-
-    padding:3.75rem 0;
-
-    border-top:0.125rem solid #c7c7c7;
-
+/* ===== RUTA DE EVACUACIÓN ===== */
+.ruta-evacuacion {
+    width: 100%;
+    background: #f3f3f3;
+    padding: 32px 0 40px;
 }
 
+.ruta-contenido {
+    width: 95%;
+    max-width: 1180px;
+    margin: 0 auto;
 
-.evacuacion-contenido {
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:2.5rem;
-
-    width:95%;
-
-    max-width:1138px;
-
-    margin:0 auto;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;                        /* separación similar al original */
 }
 
-
-/* IMAGEN */
-
-.evacuacion-imagen {
-
-    flex:0 0 759.734px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
+/* Imagen EXACTA */
+.ruta-imagen {
+    flex: 0 0 760px;
 }
 
-
-.evacuacion-imagen img {
-
-    width:759.734px;
-
-    height:432.688px;
-
-    object-fit:contain;
-
-    display:block;
-
+.ruta-imagen img {
+    width: 760px;
+    height: 433px;
+    object-fit: cover;
+    display: block;
 }
 
-
-/* TEXTO */
-
-.evacuacion-texto {
-
-    flex:1;
-
-    max-width:350px;
-
+/* Texto */
+.ruta-texto {
+    flex: 0 0 320px;
 }
 
+/* Título azul */
+.ruta-texto h2 {
+    margin: 0 0 28px;
 
-.evacuacion-texto h2 {
-
-    font-family:Lato, Arial, sans-serif;
-
-    font-size:calc(1.875rem * var(--escala-texto));
-
-    font-weight:800;
-
-    color:#000;
-
-    margin:0 0 1.125rem;
-
-    text-transform:uppercase;
-
+    color: #1c4587;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    font-size: 40px;                  /* 30pt ≈ 40px */
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
+/* Texto descriptivo */
+.ruta-texto p {
+    margin: 0;
 
-.evacuacion-texto p {
+    color: #212121;
+    font-family: 'Proxima Nova', Arial, sans-serif;
+    font-size: 18.67px;               /* 14pt ≈ 18.67px */
+    font-weight: 400;
+    line-height: 1.6667;
+    text-align: left;
+}
 
-    font-family:Lato, Arial, sans-serif;
+/* Línea superior */
+.separador-contenido {
+    width: 95%;
+    max-width: 1180px;
+    margin: 0 auto 32px;
+    border-top: 1px solid #d9d9d9;
+}
 
-    font-size:calc(1rem * var(--escala-texto));
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
 
-    line-height:1.7;
+    .ruta-contenido {
+        flex-direction: column;
+        gap: 32px;
+    }
 
-    color:#222;
+    .ruta-imagen,
+    .ruta-texto {
+        flex: none;
+        width: 100%;
+        max-width: 760px;
+    }
 
-    text-align:justify;
+    .ruta-imagen img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 760 / 433;
+    }
 
+    .ruta-texto p {
+        text-align: center;
+    }
 }

@@ -1,7 +1,7 @@
 /* ===== HORARIOS ===== */
 .horarios {
     width: 100%;
-    background: #f3f3f3;              /* mismo gris claro */
+    background: #f3f3f3;
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
     padding: 32px 0 36px;
@@ -9,17 +9,16 @@
 
 .horarios-contenido {
     width: 95%;
-    max-width: 720px;                 /* ancho parecido al original */
+    max-width: 720px;
     margin: 0 auto;
     text-align: center;
     font-family: 'Lato', Arial, sans-serif;
 }
 
-/* Títulos */
 .horario-titulo {
     margin: 0 0 24px;
     font-family: 'Lato', Arial, sans-serif;
-    font-size: 16px;                  /* 12pt ≈ 16px */
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.2;
     color: #212121;
@@ -27,23 +26,20 @@
     text-transform: uppercase;
 }
 
-/* Texto normal */
 .horario-texto {
     margin: 0 0 18px;
     font-family: 'Lato', Arial, sans-serif;
-    font-size: 14.6667px;             /* 11pt ≈ 14.67px */
+    font-size: 14.67px;
     font-weight: 400;
     line-height: 1.6667;
     color: #212121;
     text-align: center;
 }
 
-/* Línea compacta como en Google Sites */
 .horario-compacto {
     line-height: 1.2;
 }
 
-/* Separación entre ambos horarios */
 .espacio-horario {
     height: 26px;
 }
