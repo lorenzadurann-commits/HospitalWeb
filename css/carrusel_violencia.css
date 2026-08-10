@@ -1,38 +1,32 @@
-/* ===== PRIMER CARRUSEL ===== */
-
+/* ===== CARRUSEL PRINCIPAL ===== */
 .carrusel {
     width: 100%;
-    max-width: 1154px;
+    max-width: 1154.41px;   /* ancho igual al original */
     margin: 0 auto;
-    padding: 0;
-    position: relative;
-    overflow: hidden;
-    background: #fff;
+    background: #ffffff;
 }
 
 .carrusel-contenedor {
-    width: 100%;
-    max-width: 1154px;
-    margin: 0 auto;
     position: relative;
+    width: 100%;
+    height: 1122.02px;      /* alto igual al original */
     overflow: hidden;
 }
 
-/* Slides */
-.carrusel-contenedor .slide {
+.slide {
     width: 100%;
+    height: 100%;
     display: none;
 }
 
-.carrusel-contenedor .slide.activo {
+.slide.activo {
     display: block;
 }
 
-/* Imagen del carrusel */
-.carrusel-contenedor .slide img {
+.slide img {
     width: 100%;
-    height: 650px;          /* ajusta si la quieres más alta */
-    object-fit: cover;
+    height: 100%;
+    object-fit: cover;      /* llena todo el espacio */
     display: block;
 }
 
@@ -84,4 +78,15 @@
 
 .punto.activo {
     background: #006b3c;
+}
+
+@media (max-width: 1200px) {
+    .carrusel {
+        max-width: 95%;
+    }
+
+    .carrusel-contenedor {
+        height: auto;
+        aspect-ratio: 1154.41 / 1122.02;
+    }
 }
