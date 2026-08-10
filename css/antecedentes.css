@@ -1,11 +1,13 @@
 /* ===== ANTECEDENTES ===== */
 
 .antecedentes {
-    background:transparent;
-    padding: 24px 2.1875rem 1.5625rem;
+    background: transparent;
+
+    /* sin espacio extra arriba */
+    padding: 0 2.1875rem 1.5625rem;
+
     border-top: none;
 }
-
 .antecedentes-contenido {
     max-width: 75rem;
     margin: 0 auto;

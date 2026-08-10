@@ -1,10 +1,11 @@
 .bloque-institucional {
-     background: rgba(242, 242, 242, 1);
-
-    margin: 0;
-    padding: 0;
-
     width: 100%;
+
+    background: rgba(242, 242, 242, 1);
+
+    /* solo arriba */
+    padding-top: 24px;
+    padding-bottom: 0;
 
     box-sizing: border-box;
 }
