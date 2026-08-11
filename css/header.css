@@ -1,4 +1,4 @@
-/* .encabezado{
+.encabezado{
     position:absolute;
     top:0;
     left:0;
@@ -6,24 +6,16 @@
     background:transparent;
     width:100%;
     background:transparent;
-
-} */
+} 
 
 .contenedor-encabezado {
-
-    width:100%;
     max-width:1356px;
-
+    width:100%;
     margin:0 auto;
-
     display:flex;
-
     align-items:center;
-
     justify-content:flex-start;
-
     padding:15px 30px;
-
     box-sizing:border-box;
 
 }

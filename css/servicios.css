@@ -13,6 +13,9 @@
    ========================================================= */
 
 .servicios-imagen {
+
+    flex: 0 0 661.02px;
+    width: 661.02px;
     border: none !important;
     border-bottom: none !important;
 
@@ -30,6 +33,9 @@
     outline: none !important;
 
     display: block;
+
+    width: 661.02px;
+    height: 789.141px;
 
     vertical-align: top; /* evita espacios fantasma debajo de imágenes */
 }
