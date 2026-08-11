@@ -1,4 +1,4 @@
-.hero {
+.imagen-bienvenida {
 
     width:100%;
 
@@ -19,7 +19,7 @@
 
 
 } 
-.overlay {
+.titulo-imagen {
     width: 100%;
     height: 100%;
 
@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-.overlay h2 {
+.titulo-imagen h2 {
     color: white;
     font-size: calc(3rem * var(--escala-texto));
     font-weight: 700;
@@ -43,21 +43,21 @@
 
 @media (max-width:64rem) {     /* 1024px */
 
-    .overlay h2 {
+    .titulo-imagen h2 {
         font-size:calc(2.5rem * var(--escala-texto));
     }
 }
 
 @media (max-width:48rem) {     /* 768px */
 
-    .overlay h2 {
+    .titulo-imagen h2 {
         font-size:calc(2rem * var(--escala-texto));
     }
 }
 
 @media (max-width:36rem) {     /* 576px */
 
-    .overlay h2 {
+    .titulo-imagen h2 {
         font-size:calc(1.6rem * var(--escala-texto));
         line-height:1.2;
     }
