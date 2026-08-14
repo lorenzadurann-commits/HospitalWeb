@@ -1,46 +1,30 @@
 /* =========================================================
    FRANJA DE BOTONES VERDES
    ========================================================= */
-
-.servicios {
+.botones {
     width: 100%;
-
     /* fondo gris correcto */
     background: rgba(242, 242, 242, 1);
 
     /* 24 px desde la imagen superior */
     padding: 24px 0;
 
-    margin: 0;
-
-    position: relative;
     box-sizing: border-box;
 }
 
 
 /* =========================================================
-   SOLO LÍNEA INFERIOR
+   SOLO LÍNEA INFERIOR 
    ========================================================= */
 
-.servicios::after {
+.botones::after {
     content: "";
-
     display: block;
-
     width: 90%;
     max-width: 1400px;
-
     height: 1px;
-
     background: #d9d9d9;
-
     margin: 24px auto 0 auto;
-}
-
-
-/* IMPORTANTE: eliminar la línea superior */
-.servicios::before {
-    content: none;
 }
 
 /* =========================================================
@@ -50,13 +34,9 @@
 .botones-servicios {
     width: 72%;
     max-width: 980px;
-
     margin: 0 auto;
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
-
     gap: 1.625rem 1.875rem;
 }
 
@@ -68,31 +48,21 @@
 .boton-verde {
     background: #0f8b83;
     color: #ffffff;
-
     text-decoration: none;
     text-transform: uppercase;
-
     font-size: calc(0.92rem * var(--escala-texto));
     font-weight: 500;
-
     height: 2.375rem;
-
     padding: 0 1.125rem;
-
     border-radius: 0.1875rem;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     transition: background 0.2s ease;
-
     text-align: center;
-
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
     box-sizing: border-box;
 }
 
@@ -106,22 +76,3 @@
     color: #ffffff;
 }
 
-
-/* =========================================================
-   MÓVILES
-   ========================================================= */
-
-@media (max-width: 48rem) {
-
-    .botones-servicios {
-        width: 90%;
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-
-    .boton-verde {
-        height: 2.625rem;
-        font-size: calc(0.9rem * var(--escala-texto));
-    }
-
-}
