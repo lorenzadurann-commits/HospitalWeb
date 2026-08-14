@@ -20,78 +20,47 @@ document.addEventListener("DOMContentLoaded", () => {
             slides.forEach((slide) => {
                 slide.classList.remove("activo");
             });
-
             /* Quitar activo de todos los puntos */
             puntos.forEach((punto) => {
                 punto.classList.remove("activo");
             });
-
             /* Activar imagen */
-            slides[i].classList.add("activo");
-            
+            slides[i].classList.add("activo");           
             /* Activar punto correspondiente */
             if (puntos[i]) {
                 puntos[i].classList.add("activo");
             }
         }
 
-
         /* Primera imagen */
         mostrarSlide(indice);
-
-
         /* FLECHA SIGUIENTE */
-
         if (siguiente) {
-
             siguiente.addEventListener("click", () => {
-
                 indice++;
-
                 if (indice >= slides.length) {
                     indice = 0;
                 }
-
                 mostrarSlide(indice);
-
             });
-
         }
-
-
         /* FLECHA ANTERIOR */
-
         if (anterior) {
-
             anterior.addEventListener("click", () => {
-
                 indice--;
-
                 if (indice < 0) {
                     indice = slides.length - 1;
                 }
-
                 mostrarSlide(indice);
-
             });
-
         }
-
-
         /* PUNTOS */
 
         puntos.forEach((punto, i) => {
-
-            punto.addEventListener("click", () => {
-
+           punto.addEventListener("click", () => {
                 indice = i;
-
                 mostrarSlide(indice);
-
             });
-
         });
-
     });
-
 });
